@@ -1,0 +1,35 @@
+class queue;
+  byte q[$];
+ int i;
+    int s;
+  function display();
+   populate();
+    
+       $display("queue = %0p",q);
+    $display("queue = %0p",q.size());
+   
+   
+    for(i=0;i<=50;i++)
+     begin
+       s=q[i]+q[i+1];
+      
+     end
+     $display("queue = %0p",q);	
+ endfunction
+  function populate();
+    q.push_back(2);
+    q.push_back(-1);
+    q.push_back(127);
+   
+    endfunction
+
+endclass
+module que();
+  initial
+    begin
+      queue q1;
+      q1=new();
+      q1.display();
+   
+    end
+endmodule

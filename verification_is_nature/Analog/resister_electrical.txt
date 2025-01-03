@@ -1,0 +1,281 @@
+`include "discipline.h"
+`include "constants.h"
+
+// Divide by N counter
+//
+// Contains no hidden state, and so it works with SpectreRF
+//
+// Will fail if N is large, say greater than 1000.  Can tighten tolerances
+// to increase the range of N, or you can break N into integer factors and
+// implement the divide by N with several counters in series.
+//
+// Downloaded from The Designer's Guide Community (www.designers-guide.org).
+// Post any questions on www.designers-guide.org/Forum.
+
+
+
+module divideByN(pout, nout, pin, nin);
+output pout, nout;
+input pin, nin;
+electrical pin, nin, pout, nout;
+electrical vg, chg, hold;
+parameter integer n = 2 from [2:inf);   // divide ratio
+parameter integer nhi = 1 from [1:n-1]; // number of hi counts per output pulse
+parameter integer dir = 1 from [-1:1] exclude 0;
+                                        // +1 for rising edge triggered
+                                        // -1 for falling edge triggered
+parameter real tt=0.01;                 // output transition time
+parameter real vdd=5, vss=0;            // defines output high and low levels
+parameter real thresh=(vdd+vss)/2;      // input threshold is at midpoint 
+real vmax;
+integer out, count;
+real g;
+real vchg;
+
+    analog begin
+        vmax = max(abs(vdd),abs(vss));
+        g = 5*ln(n);
+        @(cross(V(pin,nin) - thresh, 0));
+
+        // hold capacitor with capacitance tt
+        I(vg,hold) <+ tt*ddt(V(vg,hold));
+
+        // clamp hold capacitor during dc analysis
+        if (analysis("static"))
+            I(vg,hold) <+ V(vg,hold);
+
+        // ideal op amp
+        V(hold): V(vg) == 0;
+
+        // titrating capacitor with capacitance tt
+        I(chg) <+ tt*ddt(V(chg));
+
+        // titrating capacitor is precharged when input is high
+        // if V(hold) is in range,
+        //     precharge to vmax/n volts to increment hold cap one level,
+        // else
+        //     precharge with equal but opposite the charge on the hold cap
+        //     in order to reset hold cap to zero
+        if ((V(hold) < vmax*(1.5/n-1)) && (dir*V(pin,nin) < dir*thresh)) begin
+            vchg = V(hold);
+        end else begin
+            vchg = vmax/n;
+        end
+
+        // determine the count
+        count = -n*V(hold)/vmax;
+
+        // charge or discharge when input is high through g Siemen switches
+        if (dir*V(pin,nin) > dir*thresh) begin
+            // dump titrating charge onto hold cap
+            I(vg,chg) <+ g*V(vg,chg);
+        end else begin
+            // precharge titrating capacitor
+            I(chg) <+ g*(V(chg)-vchg);
+            // use discrete-level feedback to correct for any errors in hold chg
+            I(vg) <+ -n*V(hold)/vmax - count;
+        end
+
+        // output pulse when V(in) is high and V(hold) below threshold
+        out = count >= (n - nhi);
+        V(pout,nout) <+ transition(vss + out*(vdd-vss), 0.0, tt, tt);
+
+    end
+endmodule
+
+
+
+
+// used to check the divider above
+// connect in to input of divider and reset to output of divider
+// set parameter values in the same way as on the divider
+// this module has hidden state and so cannot be used with SpectreRF
+
+module counter(reset, in);
+input in, reset;
+electrical in, reset;
+parameter real vdd=5, vss=0;
+parameter real thresh=(vdd+vss)/2;
+parameter integer dir = 1 from [-1:1] exclude 0;
+integer n;
+
+    analog begin
+        @(cross(V(in) - thresh, dir))
+            n = n + 1;
+        @(cross(V(reset) - thresh, dir)) begin
+            $strobe( "count = %d\n", n );
+            n = 0;
+        end
+    end
+endmodule
+
+
+
+
+// Periodic Track & Hold
+// 
+// Works with SpectreRF (has no hidden state)
+// Almost ideal ...
+//    Has buffered input and output (infinite input Z, zero out Z)
+//    Exhibits no offset or distortion errors
+//    Only nonideality is finite aperture time and very small amount of droop
+
+`include "discipline.h"
+`include "constants.h"
+
+module th (Pout, Nout, Pin, Nin);
+
+output Pout, Nout;
+input Pin, Nin;
+electrical Pin, Nin, Pout, Nout;
+parameter real period=1 from (0:inf);
+parameter real tdelay=0 from [0:inf);
+parameter real aperture=period/100 from (0:period/2);
+parameter real tc=aperture/10 from (0:aperture);
+
+integer n;
+real tstart, tstop;
+electrical hold;
+
+    analog begin
+
+// Determine the point where the aperture begins;
+        n = ($abstime - tdelay + aperture) / period + 0.5;
+        tstart = n*period + tdelay - aperture;
+        @(timer(tstart));
+
+// Determine the time where the aperture ends;
+        n = ($abstime - tdelay) / period + 0.0;
+        tstop = n*period + tdelay;
+        @(timer(tstop));
+
+// Implement switch with effective series resistence of 1 Ohm
+        if (($abstime > tstop - aperture) && ($abstime <= tstop)) 
+            I(hold) <+ V(hold) - V(Pin, Nin);
+        else
+            I(hold) <+ 1.0e-12 * V(hold);
+
+// Implement capacitor with an effective capacitance of tc
+        I(hold) <+ tc * ddt(V(hold));
+
+// Buffer output
+        V(Pout, Nout) <+ V(hold);
+
+// Control time step tightly during aperture and loosely otherwise
+        if (($abstime >= tstop - aperture) && ($abstime < tstop)) begin
+            $bound_step(tc);
+        end else begin
+            $bound_step(period/5);
+        end
+
+    end
+endmodule
+
+
+// D Flip Flop that works with SpectreRF (has no hidden state)
+//
+// Version 1a, 21 March 2007
+//
+// Ken Kundert
+//
+// Downloaded from The Designer's Guide Community (www.designers-guide.org)
+// Post any questions on www.designers-guide.org/Forum.
+
+`include "discipline.h"
+
+// basic d flip flop
+module dff (clk, d, q);
+
+input clk, d; output q;
+voltage clk, d, q;
+parameter real v0=0;
+parameter real v1=1 from (v0:inf);
+parameter integer dir=1 from [-1:1] exclude 0;
+parameter real td=0 from [0:inf);
+parameter real tt=0 from [0:inf);
+integer actNow, out;
+real thresh;
+
+analog begin
+    thresh = (v0+v1)/2;
+    actNow = 0;
+    @(initial_step or cross(V(clk) - thresh, dir))
+        actNow = 1;
+    out = idt(0, V(d) > thresh, actNow);
+    V(q) <+ transition(out ? v1 : v0, td, tt);
+end
+endmodule
+ 
+
+
+// d flip flop with reset (reset is active high) and parameterizable initial state
+module dff2 (clk, d, reset, q, qb);
+
+input clk, d, reset; output q, qb;
+voltage clk, d, reset, q, qb;
+parameter real v0=0;
+parameter real v1=1 from (v0:inf);
+parameter integer dir=1 from [-1:1] exclude 0;
+parameter real td=0 from [0:inf);
+parameter real tt=0 from [0:inf);
+parameter integer init_state=0 from [0:1];
+integer actNow, out, state;
+real thresh;
+
+analog begin
+    thresh = (v0+v1)/2;
+    actNow = 0;
+    @(cross(V(clk) - thresh, dir) or cross(V(reset) - thresh, +1)) begin
+        actNow = 1;
+        state = (V(d) > thresh) && (V(reset) < thresh);
+    end
+    @(initial_step) begin
+        actNow = 1;
+        state = init_state;
+    end
+    out = idt(0, state, actNow);
+    V(q) <+ transition(out ? v1 : v0, td, tt);
+    V(qb) <+ v0 + v1 - V(q);
+end
+endmodule
+
+
+// Frequency meter
+//
+// Version 1b, 10 October 06
+//
+// Ken Kundert
+//
+// Downloaded from The Designer's Guide (www.designers-guide.org).
+// Post any questions on www.designers-guide.org/Forum.
+
+// Uses last_crossing() for best accuracy
+// Create two variables that are unused in the module, period and freq.
+// These two variables are here so that you can plot their values
+// in a post-processing environment. You can delete them if you do
+// not need them for this.
+
+`include "disciplines.vams"
+
+(*instrument_module*)
+module measure_periods(in);
+    parameter real thresh=0;    // threshold (V)
+    parameter integer dir = 1 from [-1:1] exclude 0;
+                                // 1 for rising edges, -1 for falling
+    input in;
+    voltage in;
+    integer timing;
+    real (*ignore_state*) t0, t, period, freq;
+    analog begin
+        t = last_crossing(V(in) - thresh, dir);
+        @(cross(V(in) - thresh, dir)) begin
+            if (timing) begin
+                period = t - t0;
+                freq = 1/period;
+                $strobe("period = %es (measured at %es).\n", t - t0, $abstime);
+            end
+            t0 = t;
+            timing = 1;
+        end
+    end
+endmodule

@@ -1,0 +1,33 @@
+{E:/bb/sv labs/mux.sv} {1 {vlog -work work -sv {E:/bb/sv labs/mux.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux
+-- Compiling module mux_tb
+
+Top level modules:
+	mux_tb
+
+} {} {}} rough.sv {2 {vlog -work work -sv {E:/bb/sv labs/rough.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling package rough_sv_unit
+** Warning: E:/bb/sv labs/rough.sv(5): (vlog-2240) Treating stand-alone use of function 'populate' as an implicit VOID cast.
+
+** Warning: E:/bb/sv labs/rough.sv(4): (vlog-2250) Function "display" has no return value assignment.
+
+** Warning: E:/bb/sv labs/rough.sv(18): (vlog-2250) Function "populate" has no return value assignment.
+
+-- Compiling module que
+** Warning: E:/bb/sv labs/rough.sv(33): (vlog-2240) Treating stand-alone use of function 'display' as an implicit VOID cast.
+
+
+Top level modules:
+	que
+
+} {} {}} {E:/bb/sv labs/dl.sv} {1 {vlog -work work -sv {E:/bb/sv labs/dl.sv}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dl
+-- Compiling module dl_tb
+
+Top level modules:
+	dl_tb
+
+} {} {}}

@@ -1,1 +1,1 @@
-# trannie
+To begin training, review the weekly table. All training materials have been provided for your reference. Prior to HDL codes Digital and analog electronics should be understood. The first step in entering the project environment is to learn Linux and GVIm. The environment is automated with PYTH0N. Protocols are a collection of rules for data transport. STA is the most crucial issue. 

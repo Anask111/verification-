@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\bb\verilog codes\fsm\simulation\modelsim
+vfifo
+!i10b 1
+!s100 WUPezG0MjiHWk98iOW>zR1
+IVV]EUMd=TGCPNz]oAbJE00
+VVSBz6H=J<b49mYO:>V[ZZ2
+Z1 dE:\bb\verilog codes\fsm\simulation\modelsim
+Z2 w1710488248
+Z3 8E:/bb/verilog codes/fsm/fifo.v
+Z4 FE:/bb/verilog codes/fsm/fifo.v
+L0 1
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1710832583.215000
+Z7 !s107 E:/bb/verilog codes/fsm/fifo.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/bb/verilog codes/fsm|E:/bb/verilog codes/fsm/fifo.v|
+!s101 -O0
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work {+incdir+E:/bb/verilog codes/fsm} -O0
+vfifo_tb1
+!i10b 1
+!s100 iC18;^zUij8FP:9R:BIN@2
+I2hnODT35_H9:MTFG@O<Wo1
+VVecBH39cKkTBG`W79cGP]3
+R1
+R2
+R3
+R4
+L0 57
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+R10

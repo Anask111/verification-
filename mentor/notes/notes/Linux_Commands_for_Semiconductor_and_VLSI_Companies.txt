@@ -1,0 +1,65 @@
+
+Linux Commands for Semiconductor and VLSI Companies
+===================================================
+
+File System Management
+----------------------
+1. ls - List files and directories.
+   - Examples: ls -l, ls -a, ls -t, ls -lart
+2. clear - Clear the terminal.
+3. man / --help - Show command manual/details.
+4. pwd - Print working directory.
+5. cd - Change directory.
+   - Examples: cd .., cd -, cd ~, cd 'abc xyz'
+6. mkdir - Create a directory.
+7. touch - Create a file.
+   - Examples: touch file_name, touch -a file_name, touch -m file_name
+8. gedit - Create/edit a file in GUI mode.
+9. vi - Create/edit a file using CLI.
+   - Examples: i, Esc, /string, :q, :s, :wq
+10. cp - Copy files/directories.
+11. mv - Move or rename files/directories.
+12. rm - Remove files/directories.
+13. cat - Concatenate and display file content.
+14. which - Display command path.
+15. find - Search for files/directories.
+16. history - List executed commands.
+
+Text Processing Commands
+------------------------
+17. head - Read the first lines of a file.
+18. tail - Read the last lines of a file.
+19. sort - Sort file content.
+20. unique - Filter repeated lines in a file.
+21. more - Display text one screen at a time.
+22. less - Read text files in CLI.
+23. grep - Search with patterns.
+24. diff/vimdiff - Compare files or directories.
+25. wc - Count words, lines, characters in a file.
+
+Process Management Commands
+---------------------------
+26. top/htop - Display resource and task status.
+27. ps - Show process status.
+28. kill - Terminate processes.
+29. who - List logged-in users.
+30. w - Info about current users and their activities.
+31. users - Display current users.
+32. last - List recent user logins.
+33. free - Check memory usage.
+34. lshw - Display hardware information.
+35. lscpu - Show CPU architecture details.
+36. cat /proc/cpuinfo - CPU information.
+37. dmidecode - Dump SMBIOS content.
+38. uptime - System running time.
+39. reboot - Restart the machine.
+40. shutdown - Shut down or restart the machine.
+
+Bash Environment Related Commands
+---------------------------------
+41. date - Display current date and time.
+42. cal - Display calendar.
+43. env - List environment variables.
+44. whoami - Display current username.
+45. uname - Provide kernel version and details.
+46. hostname - Show or set the hostname.

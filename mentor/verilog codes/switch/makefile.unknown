@@ -1,0 +1,35 @@
+TESTNAME=test
+SEED=1
+UVM_TB=../../uvm_tb
+TOP=$(UVM_TB)/top
+TEST=$(UVM_TB)/test
+ENV=$(UVM_TB)/env
+AGT=$(ENV)/agent
+SEQS=$(UVM_TB)/seqs
+DUT=$(UVM_TB)/dut
+DUT_IF=$(UVM_TB)/dut_if
+PKG=$(UVM_TB)/pkg
+CONFIG=$(UVM_TB)/config
+LOG=$(UVM_TB)/sim/log
+
+DUT_DIR=+incdir+$(DUT) +incdir+$(DUT_IF)
+TB_DIR=+incdir+$(UVM_TB) +incdir+$(TOP) +incdir+$(PKG) +incdir+$(TEST) +incdir+$(ENV) +incdir+$(CONFIG) +incdir+$(AGT) +incdir+$(SEQS)
+
+comp:
+	vlog +cover -L $(QUESTA_HOME)/uvm-1.1 +incdir+$(QUESTA_HOME)/uvm-1.1 $(DUT_DIR) $(TB_DIR) $(TOP)/my_top.sv
+
+sanity_test:
+	vsim -c -sv_seed $(SEED) -cvgperinstance -voptargs=+acc -coverage -voptargs="+cover=all" +UVM_VERBOSITY=UVM_MEDIUM +UVM_TESTNAME=$(TESTNAME) -l $(LOG)/$(TESTNAME)_$(SEED).log -do "coverage save -onexit $(TESTNAME).ucdb; run -all" uvm_top
+
+test_1:
+	vsim -c -sv_seed $(SEED) -cvgperinstance -voptargs=+acc -coverage -voptargs="+cover=all" +UVM_VERBOSITY=UVM_MEDIUM +UVM_TESTNAME=test -l $(LOG)/$(TESTNAME)_$(SEED).log -do "coverage save -onexit $(TESTNAME).ucdb; run -all" uvm_top
+
+
+run: comp sanity_test
+
+regress: sanity_test test_1
+
+
+
+
+

@@ -1,0 +1,17 @@
+module HA( s ,c, a, b);
+	input a,b;
+	output reg s,c ;
+	wire temp ;
+	assign  temp = {b,a};
+always @(a or b)
+	begin
+		if (temp == 00)
+		{c,s }= 2'b00;
+		else if (temp == 01)
+		{c,s }= 2'b01;
+		else if (temp == 10)
+		{c,s }= 2'b01;
+		else (temp == 11)
+		{c,s }= 2'b10;
+	end
+endmodule	

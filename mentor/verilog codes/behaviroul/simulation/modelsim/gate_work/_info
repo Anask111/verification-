@@ -1,0 +1,48 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\bb\verilog codes\behaviroul\simulation\modelsim
+Ecounter
+Z1 w1710242337
+Z2 DPx4 ieee 16 vital_primitives 0 22 9W@YP9_VCb?_GCJ8e:;YQ0
+Z3 DPx5 maxii 15 maxii_atom_pack 0 22 n_N3PG?Y9kaHg>IY4ikZ:0
+Z4 DPx4 ieee 12 vital_timing 0 22 7h8zz2S4HVg:a;2TBMI[j1
+Z5 DPx5 maxii 16 maxii_components 0 22 BfHMP?J1:n<eiF`fTimFF0
+Z6 DPx3 std 6 textio 0 22 5>J:;AW>W0[[dW0I6EN1Q0
+Z7 DPx4 ieee 14 std_logic_1164 0 22 5=aWaoGZSMWIcH0i^f`XF1
+Z8 dE:\bb\verilog codes\behaviroul\simulation\modelsim
+Z9 8HA.vho
+Z10 FHA.vho
+l0
+L34
+VN5cJBToo4nngBh6_]fXPO2
+!s100 VUTI?]Q]DHeFm^ZAQ]nn23
+Z11 OV;C;10.1d;51
+31
+!i10b 1
+Z12 !s108 1710242347.485000
+Z13 !s90 -reportprogress|300|-93|-work|work|HA.vho|
+Z14 !s107 HA.vho|
+Z15 o-93 -work work -O0
+Z16 tExplicit 1
+Astructure
+R2
+R3
+R4
+R5
+R6
+R7
+DEx4 work 7 counter 0 22 N5cJBToo4nngBh6_]fXPO2
+l95
+L62
+VT`heg2ziRT^NdoYmV8?bj3
+!s100 BIH@^[Pjc=7=DF@9;XjLV1
+R11
+31
+!i10b 1
+R12
+R13
+R14
+R15
+R16

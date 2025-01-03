@@ -1,0 +1,22 @@
+{E:/bb/verilog codes/gate level/mux.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/mux.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}} {E:/bb/verilog codes/gate level/fa.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/fa.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FA
+
+Top level modules:
+	FA
+
+} {} {}} {E:/bb/verilog codes/gate level/demux.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/demux.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux
+
+Top level modules:
+	mux
+
+} {} {}}

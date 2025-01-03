@@ -1,0 +1,8 @@
+Info: Read atom netlist
+Info: Directory E:/bb/verilog codes/gate level/board/fpgaxchange exists --if you continue the contents of the directory may be overwritten
+Info: Generating FPGA Xchange file E:/bb/verilog codes/gate level/board/fpgaxchange/HA.fx
+Info: Atom 0 (s) has key 'output,3.3-V LVTTL,16,Off,--,--,0,--,0,--,--'
+Info: Atom 1 (c) has key 'output,3.3-V LVTTL,16,Off,--,--,0,--,0,--,--'
+Info: Atom 2 (a) has key 'input,3.3-V LVTTL,--,--,Off,--,0,--,0,--,--'
+Info: Atom 3 (b) has key 'input,3.3-V LVTTL,--,--,Off,--,0,--,0,--,--'
+Info: FPGA Xchange file E:/bb/verilog codes/gate level/board/fpgaxchange/HA.fx generated successfully

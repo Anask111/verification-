@@ -1,0 +1,9 @@
+module encoder8(y1,y2,a,a1,a2,a3);
+	output y1,y2;
+	input a,a1,a2,a3,a4;
+	assign y1= a2|a4;
+	assign y2= a3|a4;
+endmodule
+	
+	
+	

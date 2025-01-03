@@ -1,0 +1,7 @@
+module dlpre(y,clk);
+	output reg y;
+	input clk;
+	parameter ton ,toff;
+	always @ (clk )
+		assign clk = ton + toff ;
+	endmodule

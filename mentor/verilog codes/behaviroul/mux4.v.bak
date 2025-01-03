@@ -1,0 +1,41 @@
+module mux4 (y,a,b,c,d,s1,s2);
+output reg y;
+input a,b,c,d,s1,s2;
+always @(s1,s2)
+	begin
+		case({s1,s2})
+	00:begin y=a ; end
+	01:begin y=b; end
+	10:begin y=c ; end
+	11:begin y=d; end
+		endcase
+			
+	end
+endmodule
+
+module muxr4_tb;
+  reg s1,s2;
+  reg a,b,c,d;
+  wire y;
+  mux4 i_mux4(y,a,b,c,d,s1,s2);
+ 
+  initial
+  begin
+  $monitor("At time %0t - a=%b, b=%b ,c=%b, d=%b , y=%b,s1=%b,s2=%b ",$time,y,a,b,c,d,s1,s2);
+  a ='b0;
+  b='b0;
+  c ='b0;
+  d='b0;
+  s1='b1;
+  s2='b0;
+end
+
+   always #5 a=~a;
+  always #10 b=~b;
+ always #25 c=~c;
+  always #30 d=~d;
+   always #50 s1=~s1;
+always #100 s2=~s2;
+
+initial #2000 $finish;
+endmodule

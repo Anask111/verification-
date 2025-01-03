@@ -1,0 +1,34 @@
+module ADD16 #(parameter SIZE=16)(
+input [SIZE-1:0] A,B,
+input  ci,
+output co,
+genvar i;
+wire [SIZE-1:0] w;
+output [SIZE-1:0] s);
+FA u1(s[0],w[0],A[0],B[0],ci);
+genrate
+for(i=1;i<=15;i=i+1)
+FA u2(s[i],w[i],A[i],B[i],w[i-1]);
+end
+end generate
+
+FA u4(s[15],co,A[15],B[15],w[14]);
+endmodule
+module ADD16_tb;
+  wire [15:0] s;
+  wire co;
+  reg  [15:0] A,B;
+  reg   ci;
+  ADD16 i_ADD16(s,co,A,B,ci);
+  initial 
+  begin
+   $monitor("At time %0t - s=%b  , co=%b , A=%b , B=%b, ci=%b",$time,s,co,A,B,ci);
+  A=16'b0000000000000000;
+  B=16'b0000000000000000;
+  ci=1'b1;
+end
+ always #5  A=$random;
+ always #10 B=$random;
+ always #15 ci=~ci; 
+  initial #2000 $finish;
+endmodule 

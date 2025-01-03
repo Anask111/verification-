@@ -1,0 +1,712 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\bb\verilog codes\gate level
+vbintogre
+Z1 I6EJ4``Y5QIRAUePAzGh8E2
+Z2 VN^dXlnbBJP03ZSX3>R<GJ3
+Z3 dE:\bb\verilog codes\dataflow
+Z4 w1709808740
+Z5 8E:/bb/verilog codes/dataflow/bintogre.v
+Z6 FE:/bb/verilog codes/dataflow/bintogre.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s108 1709808793.138000
+Z9 !s107 E:/bb/verilog codes/dataflow/bintogre.v|
+Z10 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/bintogre.v|
+Z11 o-work work -O0
+Z12 !s100 moYY5oF5:M9WLUf;SVY=91
+!i10b 1
+!s85 0
+!s101 -O0
+vbintogre_tb
+Z13 IlH[SAICnETj?ib7Z<JW792
+Z14 VglzgC38cl@NeN87gozgMZ2
+R3
+R4
+R5
+R6
+L0 9
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z15 !s100 =[RPmhmhA;FW<Y:oiIl8P0
+!i10b 1
+!s85 0
+!s101 -O0
+vbintogrey
+Z16 !s100 @kT:U3ZEAaNT_nO>Szzbg0
+Z17 IUK^@3jP;IHfCbP<Ro3Okc2
+Z18 V]FRZ;dSSC=9Ba8C8MjZ?<0
+R3
+Z19 w1709811404
+Z20 8E:/bb/verilog codes/dataflow/bintogrey.v
+Z21 FE:/bb/verilog codes/dataflow/bintogrey.v
+L0 1
+R7
+r1
+31
+Z22 !s108 1709887775.327000
+Z23 !s107 E:/bb/verilog codes/dataflow/bintogrey.v|
+Z24 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/bintogrey.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vbintogrey_tb
+Z25 !s100 =>oQlH0c0_<C1=6h9ON;z2
+Z26 IbY`1`z`]T[m3GX^<Zf?RY3
+Z27 V5X28iG;n=^`HN4DFP[e^]1
+R3
+R19
+R20
+R21
+L0 10
+R7
+r1
+31
+R22
+R23
+R24
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vcomp2
+Z28 !s100 hbVfX4Zh<UAj4N`:^zYI43
+Z29 IJ;>j0iTfRPQYJ425G9e083
+Z30 VVJV>B2HGR8OzaKB7FJg3_1
+R3
+Z31 w1709806655
+Z32 8E:/bb/verilog codes/dataflow/comp2.v
+Z33 FE:/bb/verilog codes/dataflow/comp2.v
+L0 1
+R7
+r1
+31
+Z34 !s108 1709887775.077000
+Z35 !s107 E:/bb/verilog codes/dataflow/comp2.v|
+Z36 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/comp2.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vcomp2_tb
+Z37 !s100 1mz^651zhm=h0i]LGETYN0
+Z38 IBX[o2k4_?3:`<Jf^g]jiE0
+Z39 VChVc]eUZe<`n[Zd^E=gKT3
+R3
+R31
+R32
+R33
+L0 9
+R7
+r1
+31
+R34
+R35
+R36
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vcompr2
+Z40 !s100 `5j>h01i8=KlUL6ZN]=Xg0
+Z41 IS4m@J91=immFL5XO;gK@h3
+Z42 V4_aX4BBIHZGOhHHjG>AhF3
+R3
+Z43 w1709813088
+Z44 8E:/bb/verilog codes/dataflow/compr2.v
+Z45 FE:/bb/verilog codes/dataflow/compr2.v
+L0 1
+R7
+r1
+31
+Z46 !s108 1709887775.567000
+Z47 !s107 E:/bb/verilog codes/dataflow/compr2.v|
+Z48 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/compr2.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vcompr2_tb
+Z49 !s100 WOZLkBlA2]:JT0h<>jBha2
+Z50 I@>D^cHDhFodL5XhznLLL@3
+Z51 V6o]Cz_;[<4gKKoaZNU=[X1
+R3
+R43
+R44
+R45
+L0 10
+R7
+r1
+31
+R46
+R47
+R48
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder
+Z52 !s100 PBSnV[EYe9RJL6jmC`ia?1
+Z53 Ii8^iANJQOL;=b;J;4ffmC2
+Z54 Vbbd8hT]=k3h1OoLl8;QNz1
+R3
+Z55 w1709800850
+Z56 8E:/bb/verilog codes/dataflow/decoder.v
+Z57 FE:/bb/verilog codes/dataflow/decoder.v
+L0 1
+R7
+r1
+31
+Z58 !s108 1709887774.702000
+Z59 !s107 E:/bb/verilog codes/dataflow/decoder.v|
+Z60 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/decoder.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder_tb
+Z61 !s100 eDK<S=ZVfaSm6NQ03dZI62
+Z62 I5O9=4``hjfn_<bEh=`e141
+Z63 V=ka5g8LfkPkNOiWKG@ETE2
+R3
+R55
+R56
+R57
+L0 10
+R7
+r1
+31
+R58
+R59
+R60
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdemux
+Z64 !s100 bi6?BEze=BYV9e5icmgoH1
+Z65 Ihk6<hE5gfP5_ePe4Z3IP62
+Z66 ViL[`n1;b=DE;;Wk@i[65K0
+R3
+Z67 w1709801788
+Z68 8E:/bb/verilog codes/dataflow/demux.v
+Z69 FE:/bb/verilog codes/dataflow/demux.v
+L0 1
+R7
+r1
+31
+Z70 !s108 1709887774.827000
+Z71 !s107 E:/bb/verilog codes/dataflow/demux.v|
+Z72 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/demux.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdemux_tb
+Z73 !s100 ^=oV3j:PLG^hJ8McHd:YB1
+Z74 IHz4VbobEf:F4A?h?DG4PB1
+Z75 VainPMC2=Bj:8EGkK[Bbj12
+R3
+R67
+R68
+R69
+L0 10
+R7
+r1
+31
+R70
+R71
+R72
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdl
+Z76 !s100 5o4R^mm8Yj`Kk7?@DV5:a0
+Z77 Iiz@5n^9R2@mXFgd=dD:5M3
+Z78 V0WF7z=0H5QMY_X1nDY;8=1
+R3
+Z79 w1709806600
+Z80 8E:/bb/verilog codes/dataflow/dl.v
+Z81 FE:/bb/verilog codes/dataflow/dl.v
+L0 1
+R7
+r1
+31
+Z82 !s108 1709887774.937000
+Z83 !s107 E:/bb/verilog codes/dataflow/dl.v|
+Z84 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/dl.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdl_tb
+Z85 !s100 E641I406i@2<eo39^a^o:2
+Z86 I>0oQ3z?;=@d:E5TDlBRGX1
+Z87 V>Fe1IEPPd?kJ2jIAmBj=g1
+R3
+R79
+R80
+R81
+L0 9
+R7
+r1
+31
+R82
+R83
+R84
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vencoder8
+!i10b 1
+Z88 !s100 NUacAQ=EI@PQZJ8Ll8RAj1
+Z89 Il<a9V^E[>5W6QTI0L@l[d3
+Z90 VL@P2l7>OzHZBPXZ>A[GBT2
+R3
+Z91 w1709887760
+Z92 8E:/bb/verilog codes/dataflow/encoder8.v
+Z93 FE:/bb/verilog codes/dataflow/encoder8.v
+L0 1
+R7
+r1
+!s85 0
+31
+Z94 !s108 1709887776.277000
+Z95 !s107 E:/bb/verilog codes/dataflow/encoder8.v|
+Z96 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/encoder8.v|
+!s101 -O0
+R11
+vencoder8_tb
+!i10b 1
+!s100 m>K3h1z2F>3z[NZXSR5L<2
+I:Hg<DKD93E>P6]=RFJGS=0
+Z97 V:VY^GAlAoF6NR;ade=b:83
+R3
+R91
+R92
+R93
+L0 17
+R7
+r1
+!s85 0
+31
+R94
+R95
+R96
+!s101 -O0
+R11
+vfa
+Z98 !s100 oG2_9^BoF4RXWHO6>f3l[1
+Z99 IW:<9G8?RI]FJ02:iT3URU3
+Z100 VEG82<Ine4@?>03dNiA>F32
+R3
+Z101 w1709800169
+Z102 8E:/bb/verilog codes/dataflow/fa.v
+Z103 FE:/bb/verilog codes/dataflow/fa.v
+L0 1
+R7
+r1
+31
+Z104 !s108 1709887774.472000
+Z105 !s107 E:/bb/verilog codes/dataflow/fa.v|
+Z106 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/fa.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vfa_tb
+Z107 !s100 CZD`T?Ecje1DhUoP;dmB32
+Z108 In7UjR_m`Vc0d@iSDFR7;j2
+Z109 V6g`[S?]@7=0W5<GO1l8Cg2
+R3
+R101
+R102
+R103
+L0 8
+R7
+r1
+31
+R104
+R105
+R106
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vgreytobin
+Z110 !s100 RJE1ZX8VK39zISe^]=YhN3
+Z111 Iao7ieoX[6]8C[MUZI_n720
+Z112 VUYXIgHX5SS5B``fTSN_<?1
+R3
+Z113 w1709810976
+Z114 8E:/bb/verilog codes/dataflow/greytobin.v
+Z115 FE:/bb/verilog codes/dataflow/greytobin.v
+L0 1
+R7
+r1
+31
+Z116 !s108 1709887775.437000
+Z117 !s107 E:/bb/verilog codes/dataflow/greytobin.v|
+Z118 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/greytobin.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vgreytobin_tb
+Z119 !s100 bS]e7=IT2a^DQf=;:C7BT3
+Z120 I@b7GL]0i2YXee7ChTdTHZ3
+Z121 VBeV]iVk:^PLhez5KdJ1O`0
+R3
+R113
+R114
+R115
+L0 10
+R7
+r1
+31
+R116
+R117
+R118
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vHA
+Z122 !s100 PcVnI>Rmc4a_hj3PJ_B952
+Z123 I_<96aZK5cd?doEZ7VXVAd0
+Z124 VX`j=O=B`4WRQO1KfHneo52
+R3
+Z125 w1709801511
+Z126 8E:/bb/verilog codes/dataflow/hadder.v
+Z127 FE:/bb/verilog codes/dataflow/hadder.v
+L0 1
+R7
+r1
+31
+Z128 !s108 1709887774.314000
+Z129 !s107 E:/bb/verilog codes/dataflow/hadder.v|
+Z130 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/hadder.v|
+R11
+n@h@a
+!i10b 1
+!s85 0
+!s101 -O0
+vhadder
+Z131 I2gemAlNmR8JJ5kXX8SJXj0
+Z132 VPiTH2OSL6oAW<Yl8@UohO1
+R3
+Z133 w1709796094
+R126
+R127
+L0 1
+R7
+r1
+31
+Z134 !s108 1709796246.869000
+R129
+R130
+R11
+Z135 !s100 17QO?<]Rh`[CC=mGbV0[l3
+!i10b 1
+!s85 0
+!s101 -O0
+vhadder_tb
+Z136 !s100 [bSf2<nM5==aBQ_jZL5dE2
+Z137 IKiQBLU9RL:4E:D>Ua9>^`3
+Z138 V6CnWDHf9;4nlR2L`HC0Ob1
+R3
+R125
+R126
+R127
+L0 8
+R7
+r1
+31
+R128
+R129
+R130
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vJK
+Z139 !s100 7[90MWWj<7jb3^2?GAj6d2
+Z140 IEYSeL=n6dLNXIgU?JN8k[1
+Z141 VQiSH@iAB2Ao0m1_6nA^[n2
+R3
+Z142 w1709880591
+Z143 8E:/bb/verilog codes/dataflow/JK.v
+Z144 FE:/bb/verilog codes/dataflow/JK.v
+L0 1
+R7
+r1
+31
+Z145 !s108 1709887776.057000
+Z146 !s107 E:/bb/verilog codes/dataflow/JK.v|
+Z147 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/JK.v|
+R11
+n@j@k
+!i10b 1
+!s85 0
+!s101 -O0
+vJK_tb
+Z148 !s100 ;W=mB9=YNhZoXN:A1Gm1M0
+Z149 Io:gnl`2PM:`iO3;FA`Uc@2
+Z150 V:C54IMl9W6;dCm6a:?7@32
+R3
+R142
+R143
+R144
+L0 8
+R7
+r1
+31
+R145
+R146
+R147
+R11
+Z151 n@j@k_tb
+!i10b 1
+!s85 0
+!s101 -O0
+vmux
+Z152 !s100 4g0b;ObIA@06n5b>4bJo93
+Z153 I]>;=H0R;QX6=PzIdZ^PYd3
+Z154 Vi]UD6AZAE=j==YiagagL:2
+R3
+Z155 w1709812266
+Z156 8E:/bb/verilog codes/dataflow/mux.v
+Z157 FE:/bb/verilog codes/dataflow/mux.v
+L0 1
+R7
+r1
+31
+Z158 !s108 1709887774.602000
+Z159 !s107 E:/bb/verilog codes/dataflow/mux.v|
+Z160 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/mux.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vmux_tb
+Z161 !s100 _PN[NbHV=;oi>3aogol]J3
+Z162 IXGFESL?9Q6@zY`iz9QA<R3
+Z163 VoZY_To73>inM`PBjOR7lG2
+R3
+R155
+R156
+R157
+L0 7
+R7
+r1
+31
+R158
+R159
+R160
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vmuxr
+Z164 !s100 @Qo`Y:V5HE>;?EC=Wlo5`2
+Z165 IZe2>Yi;;LUg`RS95RiW^_0
+Z166 VUUAgKP_Pc1YUJobg4_mnZ0
+R3
+Z167 w1709813636
+Z168 8E:/bb/verilog codes/dataflow/muxr.v
+Z169 FE:/bb/verilog codes/dataflow/muxr.v
+L0 1
+R7
+r1
+31
+Z170 !s108 1709887775.687000
+Z171 !s107 E:/bb/verilog codes/dataflow/muxr.v|
+Z172 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/muxr.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vmuxr4
+Z173 !s100 WCg6WYmLIbIRZ0E1U:@oi2
+Z174 I7eU>cd]]>YUHE438^o=cz2
+Z175 VEj1[<moFj_6]c^oL:UD:P0
+R3
+Z176 w1709873403
+Z177 8E:/bb/verilog codes/dataflow/muxr4.v
+Z178 FE:/bb/verilog codes/dataflow/muxr4.v
+L0 1
+R7
+r1
+31
+Z179 !s108 1709887775.807000
+Z180 !s107 E:/bb/verilog codes/dataflow/muxr4.v|
+Z181 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/muxr4.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vmuxr4_tb
+Z182 !s100 jKNGSl>gO_Fh<FA>AidY70
+Z183 IOhae=E2JeoL^C@YNAdPc62
+Z184 VVh@3cJ>AZ]IlY]6CTRzNl0
+R3
+R176
+R177
+R178
+L0 7
+R7
+r1
+31
+R179
+R180
+R181
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vmuxr_tb
+Z185 !s100 GGzXlcZ=:TR8lnHeiX_8O3
+Z186 I4zlm2OkZ^VWf:Zf@iRYzh2
+Z187 VQB3EHjU?XdIdh[h<4edEM3
+R3
+R167
+R168
+R169
+L0 7
+R7
+r1
+31
+R170
+R171
+R172
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+voddp
+Z188 !s100 ?6O0_UBJ12M4Gk4S;Oa=l2
+Z189 I`eof5ab`oN^K9G><A5^`L3
+Z190 VDWdk2:3[3;G_Gjia5Sf[00
+R3
+Z191 w1709807750
+Z192 8E:/bb/verilog codes/dataflow/oddp.v
+Z193 FE:/bb/verilog codes/dataflow/oddp.v
+L0 1
+R7
+r1
+31
+Z194 !s108 1709887775.197000
+Z195 !s107 E:/bb/verilog codes/dataflow/oddp.v|
+Z196 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/oddp.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+voddp_tb
+Z197 !s100 X;nS=IFieAR=K:9G_>MlH1
+Z198 IO;nA=d@_ni4b2fB@fFnoj1
+Z199 Vf61nAIo5MfPUETzAh3El@1
+R3
+R191
+R192
+R193
+L0 7
+R7
+r1
+31
+R194
+R195
+R196
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vseven
+Z200 !s100 dk8F?gSoLoCCVGZX8OUDe0
+Z201 IIM8BC>;LS^DKo[ei?OQOz0
+Z202 V=M;>MPj52QAVPT1]FR0`21
+R3
+Z203 w1709880518
+Z204 8E:/bb/verilog codes/dataflow/seven.v
+Z205 FE:/bb/verilog codes/dataflow/seven.v
+L0 1
+R7
+r1
+31
+Z206 !s108 1709887776.177000
+Z207 !s107 E:/bb/verilog codes/dataflow/seven.v|
+Z208 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/seven.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vseven_TB
+Z209 !s100 c96Qd0W62<2G@b:ma[<Yi3
+Z210 Id83g5EHW7B21T8U9HTmL;0
+Z211 V9;X?o5UDAe0b4S?;iZMLO1
+R3
+R203
+R204
+R205
+L0 13
+R7
+r1
+31
+R206
+R207
+R208
+R11
+Z212 nseven_@t@b
+!i10b 1
+!s85 0
+!s101 -O0
+vsrl
+Z213 !s100 nF>bdRYEHh46SH@5]1OP>3
+Z214 IgjRIUcUm8h1_@z:9FQZBN2
+Z215 VP]T[B_1JGMF;WR5H[1jfC2
+R3
+Z216 w1709876567
+Z217 8E:/bb/verilog codes/dataflow/srl.v
+Z218 FE:/bb/verilog codes/dataflow/srl.v
+L0 1
+R7
+r1
+31
+Z219 !s108 1709887775.937000
+Z220 !s107 E:/bb/verilog codes/dataflow/srl.v|
+Z221 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/dataflow/srl.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vsrl_tb
+Z222 !s100 @jz2UJWRHh4HIdhSHjHn40
+Z223 IKEW_R4:9^9PiBM?=:0Enm3
+Z224 VJ;<<jC6ohfil]9=18G[l10
+R3
+R216
+R217
+R218
+L0 8
+R7
+r1
+31
+R219
+R220
+R221
+R11
+!i10b 1
+!s85 0
+!s101 -O0

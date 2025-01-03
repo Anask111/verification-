@@ -1,0 +1,57 @@
+module mod_10(o,i,clk,res,pre);
+	output reg o;
+	input i,clk,res,pre;
+	wire w1,w2,w3,w4,w5,w6,w7,w8;
+		d_ff s2( ,w1,i,clk,res,pre);
+		d_ff s2( ,w2,w2,w1,res,pre);
+		d_ff s2( ,w3,w3,w2,res,pre);
+		d_ff s2(o, ,w4,w3,res,pre);
+		endmodule
+	
+	module mod_10_tb;
+	  wire o;
+	  reg i,clk,res,pre;
+	  mod_10 i_mod_101(o,i,clk,res,pre);
+	  initial
+	  begin
+	  i=1'b1;
+	  clk=1'b1;
+	  pre=1'b0;
+	  res=1'b0;
+	  $monitor("At time %0t -  o=%b , i=%b,clk=%b ,res=%b,pre=%b",$time,o,i,clk,res,pre);
+	    #2;
+		 res=1'b1;
+		  #2;
+		 res=1'b0;
+		 #2;
+		  #2;
+		 res=1'b1;
+		  #2;
+		 res=1'b0;
+		 #2;
+		  #2;
+		 res=1'b1;
+		  #2;
+		 res=1'b0;
+		 #2;
+		 #2;
+		 res=1'b1;
+		  #2;
+		 res=1'b0;
+		 #2;
+		  #2;
+		 res=1'b1;
+		  #2;
+		 res=1'b0;
+		 #2;
+		  #2;
+		 res=1'b1;
+		  #2;
+		 res=1'b0;
+		 #2;
+	    end
+		 
+	    always #1 clk=~clk;
+	    always #7 i=~i;
+	    initial #500 $finish;
+	    endmodule 

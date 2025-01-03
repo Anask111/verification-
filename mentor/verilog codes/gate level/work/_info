@@ -1,0 +1,507 @@
+m255
+K3
+13
+cModel Technology
+Z0 dC:\altera\13.1
+vAND
+Z1 !s100 AzLU2IlCR`if9ckM[S;ZT0
+Z2 IB_WEdbMUXS6kkTchQVNN]1
+Z3 V1;?`n<nWHz<cCJRF<HmkL1
+Z4 dE:\bb\verilog codes\gate level
+Z5 w1709792344
+Z6 8E:/bb/verilog codes/gate level/AND.v
+Z7 FE:/bb/verilog codes/gate level/AND.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/AND.v|
+Z10 o-work work -O0
+Z11 n@a@n@d
+Z12 !s108 1709792350.649000
+Z13 !s107 E:/bb/verilog codes/gate level/AND.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vANDtb
+Z14 IK]4B0C32P:^h31OL<]_2?0
+Z15 VHNiUJ_z@d5NCH_I0DS6[l2
+R4
+Z16 w1709793594
+R6
+R7
+L0 7
+R8
+r1
+31
+Z17 !s108 1709793602.511000
+R13
+R9
+R10
+Z18 n@a@n@dtb
+!i10b 1
+Z19 !s100 OkFoOCMZh<GORfO40_liM3
+!s85 0
+!s101 -O0
+varith
+Z20 I=U;c8d5VZdo`oiL==oQGZ2
+Z21 V89P3FPYHV;eFhQmAzAIAP1
+R4
+Z22 w1709637255
+Z23 8E:/bb/verilog codes/gate level/arith.v
+Z24 FE:/bb/verilog codes/gate level/arith.v
+L0 1
+R8
+r1
+31
+Z25 !s108 1709793038.091000
+Z26 !s107 E:/bb/verilog codes/gate level/arith.v|
+Z27 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/arith.v|
+R10
+Z28 !s100 _Ik90C[eB?0@F=mEmJTB13
+!i10b 1
+!s85 0
+!s101 -O0
+varith_tb
+Z29 !s100 ndA^:4CUlP5i]7l>igcJR1
+Z30 IoG34bWQbT5n[ZT:3d@R;l0
+Z31 VbY^;3ok[I[;B>glSAc04S0
+R4
+R22
+R23
+R24
+L0 20
+R8
+r1
+31
+R25
+R26
+R27
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcomp
+Z32 !s100 X54n6Ji3Fj0NC41:VNLJY2
+Z33 IB]W9nl:U]U=>CL21c7?^V0
+Z34 V;nMLL47[lK@b2@cN9V7KD0
+R4
+Z35 w1709628151
+Z36 8E:/bb/verilog codes/gate level/comp.v
+Z37 FE:/bb/verilog codes/gate level/comp.v
+L0 1
+R8
+r1
+31
+Z38 !s108 1709793037.473000
+Z39 !s107 E:/bb/verilog codes/gate level/comp.v|
+Z40 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/comp.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vcomp_tb
+Z41 !s100 kgQBM@kQ^e`C54BKnmHc@0
+Z42 IF43k2;Aa`MZ0b]cVM[HN<0
+Z43 VjJfAV4^CSPnPLfe0O=>L60
+R4
+R35
+R36
+R37
+L0 12
+R8
+r1
+31
+R38
+R39
+R40
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder
+Z44 !s100 ;Iei]cHO:U^=Cm_?;7O4:2
+Z45 IkBB8J5nZDmQR`ieWo7mA51
+Z46 Vbbd8hT]=k3h1OoLl8;QNz1
+R4
+Z47 w1709624737
+Z48 8E:/bb/verilog codes/gate level/decoder.v
+Z49 FE:/bb/verilog codes/gate level/decoder.v
+L0 1
+R8
+r1
+31
+Z50 !s108 1709793036.561000
+Z51 !s107 E:/bb/verilog codes/gate level/decoder.v|
+Z52 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/decoder.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder_tb
+Z53 !s100 TXeRFQh]61zb;;[bi7mW00
+Z54 In674gLT;n^A@gk7K?c0710
+Z55 V=ka5g8LfkPkNOiWKG@ETE2
+R4
+R47
+R48
+R49
+L0 13
+R8
+r1
+31
+R50
+R51
+R52
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdemux
+Z56 !s100 W`gIe1T5mB8n:3fFMBV9K3
+Z57 ID?gIcF@;X3amB[@nV_:S23
+Z58 ViL[`n1;b=DE;;Wk@i[65K0
+R4
+Z59 w1709623223
+Z60 8E:/bb/verilog codes/gate level/demux.v
+Z61 FE:/bb/verilog codes/gate level/demux.v
+L0 1
+R8
+r1
+31
+Z62 !s108 1709793037.290000
+Z63 !s107 E:/bb/verilog codes/gate level/demux.v|
+Z64 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/demux.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdemux_tb
+Z65 !s100 B4@NXK@jMD17Xh859_dU70
+Z66 InS4L@XQfh7c38jjf0jUnB3
+Z67 VainPMC2=Bj:8EGkK[Bbj12
+R4
+R59
+R60
+R61
+L0 13
+R8
+r1
+31
+R62
+R63
+R64
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdl
+Z68 !s100 m4;2=1[PE2<<UDJL2i]L23
+Z69 I5Y><350ggN6JkWed_5P4B0
+Z70 V0WF7z=0H5QMY_X1nDY;8=1
+R4
+Z71 w1709633160
+Z72 8E:/bb/verilog codes/gate level/dl.v
+Z73 FE:/bb/verilog codes/gate level/dl.v
+L0 1
+R8
+r1
+31
+Z74 !s108 1709793037.904000
+Z75 !s107 E:/bb/verilog codes/gate level/dl.v|
+Z76 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/dl.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vdl_tb
+Z77 !s100 ;O>IUOSfZzBVeI;dcSVZ:3
+Z78 IPY54Y:Z[fbHoi0F^obg[X1
+Z79 V>Fe1IEPPd?kJ2jIAmBj=g1
+R4
+R71
+R72
+R73
+L0 14
+R8
+r1
+31
+R74
+R75
+R76
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vFA
+Z80 I?^WJn3OGCE6=Az7RdUQk<1
+Z81 VC=]S9hNkjmH@SS0hzN]Jk1
+R4
+Z82 w1709634777
+Z83 8E:/bb/verilog codes/gate level/fa.v
+Z84 FE:/bb/verilog codes/gate level/fa.v
+L0 1
+R8
+r1
+31
+Z85 !s108 1709793036.303000
+Z86 !s107 E:/bb/verilog codes/gate level/fa.v|
+Z87 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/fa.v|
+R10
+n@f@a
+Z88 !s100 BCcXeAcEnG7Qi@Ni;cmKL1
+!i10b 1
+!s85 0
+!s101 -O0
+vFA_tb
+Z89 IRdm8_F4fRUWlL]0c>C35U1
+Z90 VoW]J7EGjIKTS^CXOg1WCY3
+R4
+R82
+R83
+R84
+L0 12
+R8
+r1
+31
+R85
+R86
+R87
+R10
+Z91 n@f@a_tb
+Z92 !s100 `G[a:NbGVE2Mh;TNM8:HW0
+!i10b 1
+!s85 0
+!s101 -O0
+vfig1
+Z93 !s100 BI=B=3SQbz_]PQO]_L:[<1
+Z94 I><4h@N7zCJKl<mGjaO:[W0
+Z95 V<5Xcb;cc5gX2`NdU4`lB:3
+R4
+Z96 w1709631185
+Z97 8E:/bb/verilog codes/gate level/fig1.v
+Z98 FE:/bb/verilog codes/gate level/fig1.v
+L0 1
+R8
+r1
+31
+Z99 !s108 1709793037.689000
+Z100 !s107 E:/bb/verilog codes/gate level/fig1.v|
+Z101 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/fig1.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vfig1_tb
+Z102 !s100 L`iMWHk@JWO8heBRVnWlP1
+Z103 I=maIz=XhlGFLmK5k=zPO50
+Z104 V]bhd:QRo?dbVfP?Ce>QiC3
+R4
+R96
+R97
+R98
+L0 10
+R8
+r1
+31
+R99
+R100
+R101
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vHA
+Z105 !s100 69]HZ[c>@R^G?NX[J;LZB3
+Z106 IlGP4h3iK[3;;EU?TIBklD2
+Z107 VX`j=O=B`4WRQO1KfHneo52
+R4
+Z108 w1709548909
+Z109 8E:/bb/verilog codes/gate level/HA.v
+Z110 FE:/bb/verilog codes/gate level/HA.v
+L0 1
+R8
+r1
+31
+Z111 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/HA.v|
+R10
+n@h@a
+Z112 !s108 1709550941.896000
+Z113 !s107 E:/bb/verilog codes/gate level/HA.v|
+!i10b 1
+!s85 0
+!s101 -O0
+vhadder
+Z114 !s100 QUZb@3;YTKdLGlaVnRFJ02
+Z115 Ic?4_h[cVEEnYJm2l98M@81
+Z116 VPiTH2OSL6oAW<Yl8@UohO1
+R4
+Z117 w1709618858
+Z118 8E:/bb/verilog codes/gate level/hadder.v
+Z119 FE:/bb/verilog codes/gate level/hadder.v
+L0 1
+R8
+r1
+31
+Z120 !s108 1709793036.774000
+Z121 !s107 E:/bb/verilog codes/gate level/hadder.v|
+Z122 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/hadder.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vhadder_tb
+Z123 !s100 7Sih794d^l:ihHMWee7VX2
+Z124 IoTDB]a7EM]M2]iG>F<F_E2
+Z125 V6CnWDHf9;4nlR2L`HC0Ob1
+R4
+R117
+R118
+R119
+L0 9
+R8
+r1
+31
+R120
+R121
+R122
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vmux
+Z126 !s100 i?_3RP<fJe4?j1mBZ51?m1
+Z127 I>f4Q5m4h4KUCf:_jQ=nAF3
+Z128 Vi]UD6AZAE=j==YiagagL:2
+R4
+Z129 w1709629291
+Z130 8E:/bb/verilog codes/gate level/mux.v
+Z131 FE:/bb/verilog codes/gate level/mux.v
+L0 1
+R8
+r1
+31
+Z132 !s108 1709793037.068000
+Z133 !s107 E:/bb/verilog codes/gate level/mux.v|
+Z134 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/mux.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vmux_tb
+Z135 !s100 M?DhTI^]=Jm8U>Uf7e86;3
+Z136 IR9dZgJIPOTzFh3hGoQ@;O1
+Z137 VoZY_To73>inM`PBjOR7lG2
+R4
+R129
+R130
+R131
+L0 14
+R8
+r1
+31
+R132
+R133
+R134
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vmy_AND
+Z138 !s100 =HG2PG6aHGmL3JkU@H`oP1
+Z139 I?`KLzeR5WY^XDmBRcSPC53
+Z140 VA=Gj5NSzkIB=6dT_l[mW:2
+R4
+R16
+R6
+R7
+L0 1
+R8
+r1
+31
+R17
+R13
+R9
+R10
+Z141 nmy_@a@n@d
+!i10b 1
+!s85 0
+!s101 -O0
+vmy_OR
+!i10b 1
+!s100 S<TBk3SZ>7TOEkN`C<Fag2
+IXigQNkQg4XBRhRzz;=Tl82
+Vi_4nQ0B]JWO1l[Zf1BV:E3
+R4
+Z142 w1709793966
+Z143 8E:/bb/verilog codes/gate level/my_OR.v
+Z144 FE:/bb/verilog codes/gate level/my_OR.v
+L0 1
+R8
+r1
+!s85 0
+31
+Z145 !s108 1709794006.954000
+Z146 !s107 E:/bb/verilog codes/gate level/my_OR.v|
+Z147 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/my_OR.v|
+!s101 -O0
+R10
+nmy_@o@r
+vORtb
+!i10b 1
+!s100 ]WVn9K9dI6SS;D[6EUI2f0
+I6R[LSQLOb64Q3FRYKOaTe0
+V=gk6F3FA::6;_C_GRbQ;E3
+R4
+R142
+R143
+R144
+L0 7
+R8
+r1
+!s85 0
+31
+R145
+R146
+R147
+!s101 -O0
+R10
+n@o@rtb
+vsr
+Z148 !s100 L;K41K038nU;XkkonGVmF0
+Z149 IQdUM@To793PR[PAQ4iF@Z0
+Z150 VXoTEV9QohQEa0BI[0DOdZ1
+R4
+Z151 w1709637059
+Z152 8E:/bb/verilog codes/gate level/sr.v
+Z153 FE:/bb/verilog codes/gate level/sr.v
+L0 1
+R8
+r1
+31
+Z154 !s108 1709793038.203000
+Z155 !s107 E:/bb/verilog codes/gate level/sr.v|
+Z156 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/gate level/sr.v|
+R10
+!i10b 1
+!s85 0
+!s101 -O0
+vsr_tb
+Z157 !s100 ASMHB074nANC_EPVfE3BI1
+Z158 IAnLhakEAM6ARkgMY[Xk223
+Z159 V:H6@K:UG;Fek;Bm602hFW2
+R4
+R151
+R152
+R153
+L0 11
+R8
+r1
+31
+R154
+R155
+R156
+R10
+!i10b 1
+!s85 0
+!s101 -O0

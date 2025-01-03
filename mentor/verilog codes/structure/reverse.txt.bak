@@ -1,0 +1,36 @@
+
+module parity(reverse,data);
+input [7:0]data;
+output [7:0] reverse;
+reg [7:0] reverse;
+always @ ( data)
+
+begin
+parity = cal_reverse (data);
+end
+function cal_reverse;
+input [7:0] data;
+begin
+data[0]=reverse[7]
+end
+endfunction
+endmodule
+
+module parity_test;
+wire parity;
+reg [7:0]data;
+integer i;
+parity parity_tb(parity,data);
+initial
+begin
+$monitor("time=%0t  data=%b  |   parity=%b ",$time,data,parity);
+end
+initial
+begin
+for(i=0;i<256;i=i+1)
+begin
+ #1 data=i;
+end
+end
+initial #500 $finish;
+endmodule

@@ -1,0 +1,45 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\bb\verilog codes\behaviroul\simulation\modelsim
+vcomp
+!i10b 1
+!s100 [N1EhCHd0^Rb@A[d7K@V72
+ISKCME6U6HU7OW2AeGPE?21
+V1`agYm8E:bk[nEEAM2^jm2
+Z1 dE:\bb\verilog codes\behaviroul\simulation\modelsim
+Z2 w1710242709
+Z3 8E:/bb/verilog codes/behaviroul/comp.v
+Z4 FE:/bb/verilog codes/behaviroul/comp.v
+L0 1
+Z5 OV;L;10.1d;51
+r1
+!s85 0
+31
+Z6 !s108 1730984844.016000
+Z7 !s107 E:/bb/verilog codes/behaviroul/comp.v|
+Z8 !s90 -reportprogress|300|-vlog01compat|-work|work|+incdir+E:/bb/verilog codes/behaviroul|E:/bb/verilog codes/behaviroul/comp.v|
+!s101 -O0
+Z9 o-vlog01compat -work work -O0
+Z10 !s92 -vlog01compat -work work {+incdir+E:/bb/verilog codes/behaviroul} -O0
+vcomp_tb
+!i10b 1
+!s100 =DNHAa?nSZY7XGQgX5YKd1
+IeUCESHCaJGJV]^4bZQ5O22
+VjJfAV4^CSPnPLfe0O=>L60
+R1
+R2
+R3
+R4
+L0 56
+R5
+r1
+!s85 0
+31
+R6
+R7
+R8
+!s101 -O0
+R9
+R10

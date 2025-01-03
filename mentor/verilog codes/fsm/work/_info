@@ -1,0 +1,233 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\bb\verilog codes\behaviroul
+vfifo
+Z1 I1eIC_cl`gQ46<jC>Q0>O60
+Z2 VVSBz6H=J<b49mYO:>V[ZZ2
+Z3 dE:\bb\verilog codes\fsm
+Z4 w1710478556
+Z5 8E:/bb/verilog codes/fsm/fifo.v
+Z6 FE:/bb/verilog codes/fsm/fifo.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s108 1710478761.720000
+Z9 !s107 E:/bb/verilog codes/fsm/fifo.v|
+Z10 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/fsm/fifo.v|
+Z11 o-work work -O0
+Z12 !s100 l74;5gOWnX2?]`ojWWR6K1
+!i10b 1
+!s85 0
+!s101 -O0
+vfifo_tb
+Z13 IDTgDgKjG`PGA65@o6]LHA1
+Z14 VE6FzO6X^BSHbEP>3A9AN]2
+R3
+R4
+R5
+R6
+L0 62
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z15 !s100 ZF2B>>=nD0;SWl]4R>FfY2
+!i10b 1
+!s85 0
+!s101 -O0
+vfsm
+Z16 IE]DBM?FCP0_XMa__OA2S=3
+Z17 Vd<=kzSKWo`?S=oXFoXSRS2
+R3
+Z18 w1710405302
+Z19 8E:/bb/verilog codes/fsm/fsm.v
+Z20 FE:/bb/verilog codes/fsm/fsm.v
+L0 1
+R7
+r1
+31
+Z21 !s108 1710478761.960000
+Z22 !s107 E:/bb/verilog codes/fsm/fsm.v|
+Z23 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/fsm/fsm.v|
+R11
+Z24 !s100 [2`hC1UC`Y@DkR:J5YM=?0
+!i10b 1
+!s85 0
+!s101 -O0
+vfsm_tb
+Z25 IjaoUd7XzdL?l1]a56;RG?2
+Z26 Vbz^_9jeTXS5ShaYI_8LLk1
+R3
+R18
+R19
+R20
+L0 35
+R7
+r1
+31
+R21
+R22
+R23
+R11
+Z27 !s100 CNkRN]QNe?mL:;LN[oMAD2
+!i10b 1
+!s85 0
+!s101 -O0
+vmealy1010a
+Z28 I3PjIXoLY^z>_[3meCKo=Z3
+Z29 VeSBk5T1^zgiBNgd^Y@I^E0
+R3
+Z30 w1710406655
+Z31 8E:/bb/verilog codes/fsm/mealy1010a.v
+Z32 FE:/bb/verilog codes/fsm/mealy1010a.v
+L0 1
+R7
+r1
+31
+Z33 !s108 1710478762.350000
+Z34 !s107 E:/bb/verilog codes/fsm/mealy1010a.v|
+Z35 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/fsm/mealy1010a.v|
+R11
+Z36 !s100 fH=DBCmWez>DLMQSJ>Knb3
+!i10b 1
+!s85 0
+!s101 -O0
+vmealy1010a_tb
+Z37 IQ[QekUE:=[8M41MIL[QXC1
+Z38 VEbhjm<dAThEbei?UDm4ma3
+R3
+R30
+R31
+R32
+L0 39
+R7
+r1
+31
+R33
+R34
+R35
+R11
+Z39 !s100 z254R`BhZik:?dFS`TzX`1
+!i10b 1
+!s85 0
+!s101 -O0
+vmealy1010na
+Z40 IV0>zHWQ2bdZ9S@hAI60Ej3
+Z41 VRYgkb9=chBLV^O=kBR3P?0
+R3
+Z42 w1710406783
+Z43 8E:/bb/verilog codes/fsm/mealy1010.v
+Z44 FE:/bb/verilog codes/fsm/mealy1010.v
+L0 1
+R7
+r1
+31
+Z45 !s108 1710478762.180000
+Z46 !s107 E:/bb/verilog codes/fsm/mealy1010.v|
+Z47 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/fsm/mealy1010.v|
+R11
+Z48 !s100 GlzXSV<W;Q]BlS7cUb1P[1
+!i10b 1
+!s85 0
+!s101 -O0
+vmealy1010na_tb
+Z49 I=YL6[^Hd0F6XHT;De43lC0
+Z50 V^93lD3:0WF2_O9[laF6n40
+R3
+R42
+R43
+R44
+L0 39
+R7
+r1
+31
+R45
+R46
+R47
+R11
+Z51 !s100 ZCUL^>OXegANbN36hi[ZS2
+!i10b 1
+!s85 0
+!s101 -O0
+vmoore1010a
+Z52 I;6V::5D^ozSUMRHlfCch=2
+Z53 Vb3MQATg8[N:S0z8D58mM^0
+R3
+Z54 w1710407072
+Z55 8E:/bb/verilog codes/fsm/moore1010a.v
+Z56 FE:/bb/verilog codes/fsm/moore1010a.v
+L0 1
+R7
+r1
+31
+Z57 !s108 1710478762.510000
+Z58 !s107 E:/bb/verilog codes/fsm/moore1010a.v|
+Z59 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/fsm/moore1010a.v|
+R11
+!i10b 1
+Z60 !s100 TW=Q=Y3AUFGkK?edS7V6k1
+!s85 0
+!s101 -O0
+vmoore1010a_tb
+Z61 Iz]6>l?lVmm2bz9HmMChmf0
+Z62 VdPffN3R`FildZ]2JbZ?=k3
+R3
+R54
+R55
+R56
+L0 47
+R7
+r1
+31
+R57
+R58
+R59
+R11
+!i10b 1
+Z63 !s100 J01EezCLl_i3`ST]ZP;JK3
+!s85 0
+!s101 -O0
+vmoore1010na
+!i10b 1
+!s100 :_Q1ocS1>D1CHeE^HWFbc3
+IPCY9b?df3UMSZeb9Z5j412
+V0fY0:znSFm^^d]<lbEQM<2
+R3
+Z64 w1710407078
+Z65 8E:/bb/verilog codes/fsm/moore1010na.v
+Z66 FE:/bb/verilog codes/fsm/moore1010na.v
+L0 1
+R7
+r1
+!s85 0
+31
+Z67 !s108 1710478762.679000
+Z68 !s107 E:/bb/verilog codes/fsm/moore1010na.v|
+Z69 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/fsm/moore1010na.v|
+!s101 -O0
+R11
+vmoore1010na_tb
+!i10b 1
+!s100 _?K6Rk2bT6MA>=^FmWBFQ3
+I1:T3Jb_ZddX^F4[:eB`6Q2
+VSo4jPWXjjd;5TV[;@BDc52
+R3
+R64
+R65
+R66
+L0 47
+R7
+r1
+!s85 0
+31
+R67
+R68
+R69
+!s101 -O0
+R11

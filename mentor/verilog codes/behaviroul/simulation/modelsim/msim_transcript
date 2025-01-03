@@ -1,0 +1,61 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do HA_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/bb/verilog\ codes/behaviroul {E:/bb/verilog codes/behaviroul/comp.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module comp
+# -- Compiling module comp_tb
+# 
+# Top level modules:
+# 	comp_tb
+# 
+vsim work.comp_tb
+# vsim work.comp_tb 
+# Loading work.comp_tb
+# Loading work.comp
+add wave -position insertpoint  \
+sim:/comp_tb/a \
+sim:/comp_tb/b \
+sim:/comp_tb/x \
+sim:/comp_tb/y \
+sim:/comp_tb/z
+# ** Warning: (vsim-WLF-5000) WLF file currently in use: vsim.wlf
+# 
+#           File in use by: Anaskhan  Hostname: ANAS-KHAN  ProcessID: 15548
+# 
+#           Attempting to use alternate WLF file "./wlftw02bzk".
+# ** Warning: (vsim-WLF-5001) Could not open WLF file: vsim.wlf
+# 
+#           Using alternate file: ./wlftw02bzk
+# 
+run
+# At time 0 -  x=0, y=0,z=0 ,a=00, b=00 
+# At time 5 -  x=1, y=0,z=0 ,a=01, b=00 
+# At time 10 -  x=0, y=1,z=0 ,a=00, b=01 
+# At time 15 -  x=0, y=0,z=1 ,a=01, b=01 
+# At time 20 -  x=1, y=0,z=0 ,a=10, b=00 
+# At time 25 -  x=1, y=0,z=0 ,a=11, b=00 
+# At time 30 -  x=0, y=1,z=0 ,a=10, b=01 
+# At time 35 -  x=0, y=1,z=0 ,a=11, b=01 
+# At time 40 -  x=1, y=0,z=0 ,a=00, b=10 
+# At time 45 -  x=1, y=0,z=0 ,a=01, b=10 
+# At time 50 -  x=1, y=0,z=0 ,a=00, b=11 
+# At time 55 -  x=1, y=0,z=0 ,a=01, b=11 
+# At time 60 -  x=0, y=0,z=1 ,a=10, b=10 
+# At time 65 -  x=0, y=0,z=1 ,a=11, b=10 
+# At time 70 -  x=0, y=0,z=0 ,a=10, b=11 
+# At time 75 -  x=0, y=0,z=1 ,a=11, b=11 
+# At time 80 -  x=0, y=0,z=0 ,a=00, b=00 
+# At time 85 -  x=1, y=0,z=0 ,a=01, b=00 
+# At time 90 -  x=0, y=1,z=0 ,a=00, b=01 
+# At time 95 -  x=0, y=0,z=1 ,a=01, b=01 
+# A time value could not be extracted from the current line

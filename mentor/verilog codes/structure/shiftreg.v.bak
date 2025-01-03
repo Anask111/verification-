@@ -1,0 +1,27 @@
+module shitreg(o,i);
+	output o;
+	input i;
+	wire w1,w2,w3,w4,w5,w6;
+		d_ff s1(w1, ,i,clk);
+		d_ff s1(w2, ,w1,clk);
+		d_ff s1(w3, ,w2,clk);
+		d_ff s1(w4, ,w3,clk);
+		d_ff s1(w5, ,w4,clk);
+		d_ff s1(w6, ,w5,clk);
+		d_ff s1(o, ,w6,clk);
+	endmodule
+	
+	module shitreg_tb;
+	  wire o;
+	  reg i;
+	  shitreg i_shitreg1(o,i);
+	  initial
+	  begin
+	  i=1'b1;
+	  $monitor("At time %0t -  o=%b , i=%b ",$time,o,i);
+	    
+	    end
+	    always #1 clk=~clk;
+	    always #7 i=$random;
+	    initial #50 $finish;
+	    endmodule 

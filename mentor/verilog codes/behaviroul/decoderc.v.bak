@@ -1,0 +1,32 @@
+module decoderc(y1,y2,y3,y4,a,b);
+	output reg y1,y2,y3,y4;
+	input a,b;
+		always @(a,b)
+	begin
+		case({a,b})
+	00:begin y1 ; end
+	01:begin y2; end
+	10:begin y3 ; end
+	11:begin y4; end
+		endcase
+			
+	end
+
+endmodule
+
+module decoderc_tb;
+  wire y1,y2,y3,y4;
+  reg a,b;
+  decoderc i_decoderc(y1,y2,y3,y4,a,b);
+  initial
+  begin
+  $monitor("At time %0t - a=%b, b=%b, y1=%b , y2=%b , y3=%b,y4=%b ",$time,a,b,y1,y2,y3,y4);
+  a='b1;
+  b='b1;
+end
+ always #5  a=~a;
+ always #10 b=~b;
+  initial #200 $finish;
+endmodule
+
+  

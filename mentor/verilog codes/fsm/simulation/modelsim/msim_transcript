@@ -1,0 +1,87 @@
+# Reading C:/altera/13.1/modelsim_ase/tcl/vsim/pref.tcl 
+# do fsm_run_msim_rtl_verilog.do 
+# if {[file exists rtl_work]} {
+# 	vdel -lib rtl_work -all
+# }
+# vlib rtl_work
+# vmap work rtl_work
+# Copying C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini
+# Modifying modelsim.ini
+# ** Warning: Copied C:\altera\13.1\modelsim_ase\win32aloem/../modelsim.ini to modelsim.ini.
+#          Updated modelsim.ini.
+# 
+# vlog -vlog01compat -work work +incdir+E:/bb/verilog\ codes/fsm {E:/bb/verilog codes/fsm/fifo.v}
+# Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+# -- Compiling module fifo
+# -- Compiling module fifo_tb1
+# 
+# Top level modules:
+# 	fifo_tb1
+# 
+vsim work.fifo_tb1
+# vsim work.fifo_tb1 
+# Loading work.fifo_tb1
+# Loading work.fifo
+add wave -position insertpoint  \
+sim:/fifo_tb1/clk \
+sim:/fifo_tb1/count \
+sim:/fifo_tb1/datain \
+sim:/fifo_tb1/datao \
+sim:/fifo_tb1/empty \
+sim:/fifo_tb1/full \
+sim:/fifo_tb1/rd \
+sim:/fifo_tb1/res \
+sim:/fifo_tb1/wr
+add wave -position insertpoint  \
+sim:/fifo_tb1/i_fifo2/prd \
+sim:/fifo_tb1/i_fifo2/pwr
+run
+# xxxx
+# xxxx
+# xxxx
+# xxxx
+# xxxx
+# 0000
+# 0001
+# 0010
+# 0011
+# 0100
+# 0101
+# 0101
+# 0110
+# 0111
+# 1000
+# 1000
+# 1000
+# 1001
+# 1010
+# 1011
+# 1100
+# 1101
+# 1110
+# 1110
+# 1110
+# 1111
+# 1111
+# 0000
+# 0000
+# 0000
+# 0001
+# 0010
+# 0010
+# 0011
+# 0100
+# 0100
+# 0101
+# 0110
+# 0110
+# 0111
+# 0111
+# 1000
+# 1000
+# 1001
+# 1001
+# 1010
+# 1011
+# 1100
+# 1101

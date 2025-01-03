@@ -1,0 +1,32 @@
+module sram(datao,datain,mem,cs,rd,wr,add,clk ,res);
+output reg [7:0] datao;
+input [7:0] datain;
+input [3:0] add;
+inout [7:0] mem [15:0];
+input cs,rd,wr,clk ,res;
+always @ (datain,mem,cs,rd,wr,add,clk ,res)
+		begin
+			if(cs==1'b1)
+				begin
+				  if(wr==1'b1)
+				  begin
+				    datao=datain;
+					 add=add+4'b0001;
+				  end
+				  else if(rd==1'b1)
+				  begin
+						$display("%b",add)
+					 add=add+4'b0001;
+				  end
+				  else if(res==1'b1)
+				  begin
+						mem=0;
+				end
+			else
+			begin
+			detain =8'b00000000;
+			re=1'b0;
+			wr=1'b0;
+			res=1'b0;
+			end
+		end

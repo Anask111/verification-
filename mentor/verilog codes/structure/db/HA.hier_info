@@ -1,0 +1,19 @@
+|reverse
+reverse[0] <= data[7].DB_MAX_OUTPUT_PORT_TYPE
+reverse[1] <= data[6].DB_MAX_OUTPUT_PORT_TYPE
+reverse[2] <= data[5].DB_MAX_OUTPUT_PORT_TYPE
+reverse[3] <= data[4].DB_MAX_OUTPUT_PORT_TYPE
+reverse[4] <= data[3].DB_MAX_OUTPUT_PORT_TYPE
+reverse[5] <= data[2].DB_MAX_OUTPUT_PORT_TYPE
+reverse[6] <= data[1].DB_MAX_OUTPUT_PORT_TYPE
+reverse[7] <= data[0].DB_MAX_OUTPUT_PORT_TYPE
+data[0] => reverse[7].DATAIN
+data[1] => reverse[6].DATAIN
+data[2] => reverse[5].DATAIN
+data[3] => reverse[4].DATAIN
+data[4] => reverse[3].DATAIN
+data[5] => reverse[2].DATAIN
+data[6] => reverse[1].DATAIN
+data[7] => reverse[0].DATAIN
+
+

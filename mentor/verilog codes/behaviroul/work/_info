@@ -1,0 +1,622 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\bb\verilog codes\dataflow
+vcomp
+Z1 Ia0m6z5j29MiQLK:NB]aI51
+Z2 V1`agYm8E:bk[nEEAM2^jm2
+Z3 dE:\bb\verilog codes\behaviroul
+Z4 w1710219998
+Z5 8E:/bb/verilog codes/behaviroul/comp - Copy.v
+Z6 FE:/bb/verilog codes/behaviroul/comp - Copy.v
+L0 1
+Z7 OV;L;10.1d;51
+r1
+31
+Z8 !s108 1710226550.556000
+Z9 !s107 E:/bb/verilog codes/behaviroul/comp - Copy.v|
+Z10 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/comp - Copy.v|
+Z11 o-work work -O0
+Z12 !s100 a`QYN7lgW>0VcG^VQN?eH1
+!i10b 1
+!s85 0
+!s101 -O0
+vcomp2_tb
+Z13 !s100 lgZc<W52:PfFU@gHa[:Ph2
+Z14 IfH]:C]3]Qlfim>H7oZ?TP2
+Z15 VChVc]eUZe<`n[Zd^E=gKT3
+R3
+Z16 w1710219953
+Z17 8E:/bb/verilog codes/behaviroul/compc - Copy.v
+Z18 FE:/bb/verilog codes/behaviroul/compc - Copy.v
+L0 27
+R7
+r1
+31
+Z19 !s108 1710226550.745000
+Z20 !s107 E:/bb/verilog codes/behaviroul/compc - Copy.v|
+Z21 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/compc - Copy.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vcomp_tb
+Z22 IZ99>MZd=XgVhf4<]AkROR1
+Z23 VjJfAV4^CSPnPLfe0O=>L60
+R3
+R4
+R5
+R6
+L0 56
+R7
+r1
+31
+R8
+R9
+R10
+R11
+Z24 !s100 A6ZYb5V_6224e_[[0L6N13
+!i10b 1
+!s85 0
+!s101 -O0
+vcompc
+Z25 !s100 glHX7gJYbPcDW=nQ8hoHG2
+Z26 I2WUcWR]QMC?Vl>^TG=F?d0
+Z27 VMKlU@_`@ho3Q63RCf6>[P0
+R3
+R16
+R17
+R18
+L0 1
+R7
+r1
+31
+R19
+R20
+R21
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder
+Z28 !s100 dJ?FEgz^kZ<9:Z9LIfJSK2
+Z29 IS7=Q2G7]gO=;iRNzl0gbQ0
+Z30 Vbbd8hT]=k3h1OoLl8;QNz1
+R3
+Z31 w1710224072
+Z32 8E:/bb/verilog codes/behaviroul/decoder.v
+Z33 FE:/bb/verilog codes/behaviroul/decoder.v
+L0 1
+R7
+r1
+31
+Z34 !s108 1710226551.535000
+Z35 !s107 E:/bb/verilog codes/behaviroul/decoder.v|
+Z36 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/decoder.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoder_tb
+Z37 !s100 `E>P]=8zeR9Y_7ZggFTcz2
+Z38 IcSG?NL;VC`0fm]ceVNd?82
+Z39 V=ka5g8LfkPkNOiWKG@ETE2
+R3
+R31
+R32
+R33
+L0 20
+R7
+r1
+31
+R34
+R35
+R36
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoderc
+Z40 !s100 S7EUKn7M5VLHzg<UjK0k50
+Z41 IL90YOQb4b?_7EO3H0fD3`3
+Z42 VD21P9R1M1a@ZO^^m>n[Lg3
+R3
+Z43 w1710223963
+Z44 8E:/bb/verilog codes/behaviroul/decoderc.v
+Z45 FE:/bb/verilog codes/behaviroul/decoderc.v
+L0 1
+R7
+r1
+31
+Z46 !s108 1710226551.735000
+Z47 !s107 E:/bb/verilog codes/behaviroul/decoderc.v|
+Z48 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/decoderc.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdecoderc_tb
+Z49 !s100 Q7R[I@iaV=VMZCa2<H=C52
+Z50 IaKmP>zdiZAbYJGnKAzYF80
+Z51 VWBKJ:eXCT[]KD9B[NTKRD1
+R3
+R43
+R44
+R45
+L0 17
+R7
+r1
+31
+R46
+R47
+R48
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdemux
+Z52 !s100 VnW6SBdZ^Jm3>DX`boX>22
+Z53 InC;AV6IYcJZdFYfdV]SN?1
+Z54 ViL[`n1;b=DE;;Wk@i[65K0
+R3
+Z55 w1710223567
+Z56 8E:/bb/verilog codes/behaviroul/demux.v
+Z57 FE:/bb/verilog codes/behaviroul/demux.v
+L0 1
+R7
+r1
+31
+Z58 !s108 1710226551.945000
+Z59 !s107 E:/bb/verilog codes/behaviroul/demux.v|
+Z60 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/demux.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdemux_tb
+Z61 !s100 U?hO0LH33o<Eg41oL4ILC1
+Z62 I@_TO^2>i=Raj0M4Efc8QJ0
+Z63 VainPMC2=Bj:8EGkK[Bbj12
+R3
+R55
+R56
+R57
+L0 19
+R7
+r1
+31
+R58
+R59
+R60
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdemuxc
+Z64 !s100 nU1?0_VOKGBRl<HGob8XJ2
+Z65 I>SDG8VPF3D=`1dz:ah^d>0
+Z66 V3P9WZR1IA3]n9k`RN[kgm2
+R3
+Z67 w1710223696
+Z68 8E:/bb/verilog codes/behaviroul/demuxc.v
+Z69 FE:/bb/verilog codes/behaviroul/demuxc.v
+L0 1
+R7
+r1
+31
+Z70 !s108 1710226552.135000
+Z71 !s107 E:/bb/verilog codes/behaviroul/demuxc.v|
+Z72 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/demuxc.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vdemuxc_tb
+Z73 !s100 D?2B_U^zGXQ=Y6SFC@T8U0
+Z74 IM`UQT77j=@2CL5JEeXYfB2
+Z75 VnNfid9NIe1X4fH`bF]i`A1
+R3
+R67
+R68
+R69
+L0 17
+R7
+r1
+31
+R70
+R71
+R72
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vencoder8
+Z76 !s100 GjgMG_JGTECl<32a:0l3[1
+Z77 I<eiaf^62ge=MYXh?89Ed90
+Z78 VL@P2l7>OzHZBPXZ>A[GBT2
+R3
+Z79 w1710225490
+Z80 8E:/bb/verilog codes/behaviroul/encoder8.v
+Z81 FE:/bb/verilog codes/behaviroul/encoder8.v
+L0 1
+R7
+r1
+31
+Z82 !s108 1710226552.325000
+Z83 !s107 E:/bb/verilog codes/behaviroul/encoder8.v|
+Z84 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/encoder8.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vencoder8_tb
+Z85 !s100 _UeIUGYlU<9n5?hCIjajc3
+Z86 IOha:<>c[9b4MH_UOUkV?B0
+Z87 V:VY^GAlAoF6NR;ade=b:83
+R3
+R79
+R80
+R81
+L0 21
+R7
+r1
+31
+R82
+R83
+R84
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vFA
+Z88 !s100 G>^@kn09aQ@l4OX@T:bXz1
+Z89 I?C:TgS;ndi[3C2zTCT]YG3
+Z90 VC=]S9hNkjmH@SS0hzN]Jk1
+R3
+Z91 w1710156630
+Z92 8E:/bb/verilog codes/behaviroul/FA.v
+Z93 FE:/bb/verilog codes/behaviroul/FA.v
+L0 1
+R7
+r1
+31
+Z94 !s108 1710226549.776000
+Z95 !s107 E:/bb/verilog codes/behaviroul/FA.v|
+Z96 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/FA.v|
+R11
+n@f@a
+!i10b 1
+!s85 0
+!s101 -O0
+vFA_tb
+Z97 !s100 C@]`M]b149anZK>UUbAog2
+Z98 I>z0a9:UP@3CUODo79T4kW2
+Z99 VoW]J7EGjIKTS^CXOg1WCY3
+R3
+R91
+R92
+R93
+L0 39
+R7
+r1
+31
+R94
+R95
+R96
+R11
+Z100 n@f@a_tb
+!i10b 1
+!s85 0
+!s101 -O0
+vFAcase
+Z101 !s100 ^59[1E4F]Xhk5@fTE[gn=3
+Z102 IHn:MVeHBeh;Y@Q8IemXVH2
+Z103 VoFV@H<PAT@6C=WSX>5z202
+R3
+Z104 w1710157750
+Z105 8E:/bb/verilog codes/behaviroul/FAcase.v
+Z106 FE:/bb/verilog codes/behaviroul/FAcase.v
+L0 1
+R7
+r1
+31
+Z107 !s108 1710226549.976000
+Z108 !s107 E:/bb/verilog codes/behaviroul/FAcase.v|
+Z109 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/FAcase.v|
+R11
+Z110 n@f@acase
+!i10b 1
+!s85 0
+!s101 -O0
+vFAcase_tb
+Z111 !s100 glH7IhSQl[7^LE24feDbP0
+Z112 Iz;7QcTo[G<ez1ajKCz2kB2
+Z113 V3<ao9mgYSY6bM5Hj8Iz0b3
+R3
+R104
+R105
+R106
+L0 23
+R7
+r1
+31
+R107
+R108
+R109
+R11
+Z114 n@f@acase_tb
+!i10b 1
+!s85 0
+!s101 -O0
+vgreytobin
+Z115 !s100 dVTfHC>R8HCmi??8RJ11`0
+Z116 IlF3760h6OSU=9<?[:;iX71
+Z117 VUYXIgHX5SS5B``fTSN_<?1
+R3
+Z118 w1710222413
+Z119 8E:/bb/verilog codes/behaviroul/greytobin - Copy.v
+Z120 FE:/bb/verilog codes/behaviroul/greytobin - Copy.v
+L0 1
+R7
+r1
+31
+Z121 !s108 1710226550.936000
+Z122 !s107 E:/bb/verilog codes/behaviroul/greytobin - Copy.v|
+Z123 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/greytobin - Copy.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vgreytobin_tb
+Z124 !s100 1ILA<VzaTg9HM;UiM@OlB0
+Z125 IT;V6;SAgLN:TYPeB9D?BP2
+Z126 VBeV]iVk:^PLhez5KdJ1O`0
+R3
+R118
+R119
+R120
+L0 58
+R7
+r1
+31
+R121
+R122
+R123
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vHA
+Z127 !s100 zdeSSOC2Rk5YF^H8=[L>B1
+Z128 I:aC[Fj:Q`2cjOmiZ;Ezf43
+Z129 VX`j=O=B`4WRQO1KfHneo52
+R3
+Z130 w1710155587
+Z131 8E:/bb/verilog codes/behaviroul/HA.v
+Z132 FE:/bb/verilog codes/behaviroul/HA.v
+L0 1
+R7
+r1
+31
+Z133 !s108 1710226549.563000
+Z134 !s107 E:/bb/verilog codes/behaviroul/HA.v|
+Z135 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/HA.v|
+R11
+n@h@a
+!i10b 1
+!s85 0
+!s101 -O0
+vHA_tb
+Z136 !s100 EDhH=]N9KM7WXQjL9;;lE1
+Z137 I>lA3mCmED;[z4N2>M@GFh1
+Z138 V7@kNiz4h=aZ4@GdZU^kKl0
+R3
+R130
+R131
+R132
+L0 26
+R7
+r1
+31
+R133
+R134
+R135
+R11
+Z139 n@h@a_tb
+!i10b 1
+!s85 0
+!s101 -O0
+vHAcase
+Z140 !s100 D5>CAmgH4bnBLB:BzgJ211
+Z141 ICP3M3Z0<d_4Pn=@K1DBHh1
+Z142 V:jR_m5L;T:X0T4l_OCMeG0
+R3
+Z143 w1710157577
+Z144 8E:/bb/verilog codes/behaviroul/HAcase.v
+Z145 FE:/bb/verilog codes/behaviroul/HAcase.v
+L0 1
+R7
+r1
+31
+Z146 !s108 1710226550.156000
+Z147 !s107 E:/bb/verilog codes/behaviroul/HAcase.v|
+Z148 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/HAcase.v|
+R11
+Z149 n@h@acase
+!i10b 1
+!s85 0
+!s101 -O0
+vHAcase_tb
+Z150 !s100 6ViGAWM9[_97<4E[Q?zUQ1
+Z151 IbL2?Eg6_L1kY_YdY;TV5;1
+Z152 VHHP@6cF;5i=QlGU[HI08R0
+R3
+R143
+R144
+R145
+L0 18
+R7
+r1
+31
+R146
+R147
+R148
+R11
+Z153 n@h@acase_tb
+!i10b 1
+!s85 0
+!s101 -O0
+vmuxr4
+Z154 !s100 N^DzE@kV_61V[c[_fozGD0
+Z155 InKJNal^lzS=Xni^4Lg4n`3
+Z156 VEj1[<moFj_6]c^oL:UD:P0
+R3
+Z157 w1710223237
+Z158 8E:/bb/verilog codes/behaviroul/muxr4.v
+Z159 FE:/bb/verilog codes/behaviroul/muxr4.v
+L0 1
+R7
+r1
+31
+Z160 !s108 1710226552.505000
+Z161 !s107 E:/bb/verilog codes/behaviroul/muxr4.v|
+Z162 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/muxr4.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vmuxr4_tb
+Z163 !s100 IfioR8N]1Ka>T@K2KF6HE3
+Z164 I?NBQHg@ECJS4co5n4Z6_a3
+Z165 VVh@3cJ>AZ]IlY]6CTRzNl0
+R3
+R157
+R158
+R159
+L0 19
+R7
+r1
+31
+R160
+R161
+R162
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vodd_tb
+Z166 !s100 mghD1i?4<PVi31L_b2HcM3
+Z167 I^HIR:>0W_cmPD:N[_ZiAP2
+Z168 VNEL;T;MBKhOVGl4O;`>8S2
+R3
+Z169 w1710220844
+Z170 8E:/bb/verilog codes/behaviroul/oddp.v
+Z171 FE:/bb/verilog codes/behaviroul/oddp.v
+L0 60
+R7
+r1
+31
+Z172 !s108 1710226551.185000
+Z173 !s107 E:/bb/verilog codes/behaviroul/oddp.v|
+Z174 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/oddp.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+voddp
+Z175 !s100 DQ:^ZOUFG8[j>@WHDmJ4X2
+Z176 IB[MCnEdoiC4OJ`<5Zi>BM2
+Z177 VDWdk2:3[3;G_Gjia5Sf[00
+R3
+R169
+R170
+R171
+L0 1
+R7
+r1
+31
+R172
+R173
+R174
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+voddp_tb
+Z178 !s100 3=OOS13QK7k04_XWL<QEe3
+Z179 IBUW2bJ4nFg]hDl:iP1b?82
+Z180 Vf61nAIo5MfPUETzAh3El@1
+R3
+Z181 w1710220442
+Z182 8E:/bb/verilog codes/behaviroul/oddpc - Copy.v
+Z183 FE:/bb/verilog codes/behaviroul/oddpc - Copy.v
+L0 28
+R7
+r1
+31
+Z184 !s108 1710226551.355000
+Z185 !s107 E:/bb/verilog codes/behaviroul/oddpc - Copy.v|
+Z186 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/oddpc - Copy.v|
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+voddpc
+Z187 !s100 Ro:hh`^k1PKjH_E8R>VGj0
+Z188 IYzC[CBVCKloiaROV43eQd2
+Z189 V^aY[7DNWX2WJ]zI:5PlGE2
+R3
+R181
+R182
+R183
+L0 1
+R7
+r1
+31
+R184
+R185
+R186
+R11
+!i10b 1
+!s85 0
+!s101 -O0
+vseven
+!i10b 1
+!s100 LK8g;VVLN^j?moM>>DS5S0
+I[9o8P@o9aMZYaV6zdLTdb1
+Z190 V=M;>MPj52QAVPT1]FR0`21
+R3
+Z191 w1710226523
+Z192 8E:/bb/verilog codes/behaviroul/seven.v
+Z193 FE:/bb/verilog codes/behaviroul/seven.v
+L0 1
+R7
+r1
+!s85 0
+31
+Z194 !s108 1710226552.735000
+Z195 !s107 E:/bb/verilog codes/behaviroul/seven.v|
+Z196 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/behaviroul/seven.v|
+!s101 -O0
+R11
+vseven_TB
+!i10b 1
+Z197 !s100 @Qf8ZhjNlZ8aXkeGfHPV^0
+Z198 IZZ^37NVM]>bAA:gSW`KWf1
+Z199 V9;X?o5UDAe0b4S?;iZMLO1
+R3
+R191
+R192
+R193
+L0 22
+R7
+r1
+!s85 0
+31
+R194
+R195
+R196
+!s101 -O0
+R11
+Z200 nseven_@t@b

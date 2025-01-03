@@ -1,0 +1,199 @@
+t has become customary to instroduce any computer language with a "Hello world" program. That is a program that simply prints "Hello World!". While Verilog-A was not designed to perform this type of task, it is nevertheless possible to write such a program. Here is an example:
+
+module hello_world ;
+analog
+begin
+@(initial_step)
+$strobe("Hello World!") ;
+end
+endmodule
+
+We will now show how to make a simple gain block. Here is the Verilog-A design:
+
+'include "disciplines.vams"
+module gain_block(in, out) ;
+electrical in, out ;
+parameter real gain=1.0 ;
+analog
+V(out) <+ V(in)*gain ;
+endmodule
+
+In this example we define a simple resistor. A resistor is a device whose current is proportional to the voltage difference between its terminals. This is defined in Verilog-A using a branch contribution as follows:
+
+I(p,n) <+ V(p,n)/resistance ;
+
+'include "disciplines.vams"
+module va_resistor(p,n) ;
+parameter real resistance = 1000.0 from (0.0:inf] ;
+electrical p, n ;
+analog
+I(p,n) <+ V(p,n)/resistance ;
+endmodule
+
+This is a definition for a soft limiter device. This will pass the input signal through unchanged up to some limit after which it will follow a decaying exponential in the form:
+
+1 - exp( -(v-vlim) )
+
+The same in reverse occurs for the lower limit. Here is the full definition:
+
+'include "disciplines.vams"
+module soft_limiter(in, out) ;
+electrical in, out ;
+parameter real vlow=-1.0,
+vhigh=1.0,
+soft=0.1 from (0:1.0) ;
+localparam real band = (vhigh-vlow)*soft,
+vlow_1 = vlow+band,
+vhigh_1 = vhigh-band ;
+real vin ;
+analog
+begin
+@(initial_step)
+if (vhigh<vlow)
+begin
+$strobe("Lower limit must be less than higher limit") ;
+$finish ;
+end
+vin = V(in) ;
+if (vin>vhigh_1)
+V(out) <+ vhigh_1+band*(1.0-exp(-(vin-vhigh_1)/band));
+else if (vin<vlow_1)
+V(out) <+ vlow_1-band*(1.0-exp((vin-vlow_1)/band)) ;
+else
+V(out) <+ vin ;
+end
+endmodule
+
+To implement a capacitor we need a time derivative function. In Verilog-A this is achieved using the ddt analog operator. A capacitor can be defined using the branch contribution statement:
+
+I(p,n) <+ capacitance * ddt( V(p,n)) ;
+Like the resistor, this defines the current/voltage relationship that the simulator must maintain on the nodes p and n. However, this definition has time dependence.
+
+Here is the complete definition for a capacitor:
+
+'include "disciplines.vams"
+module va_capacitor(p,n) ;
+parameter real capacitance = 1n ;
+electrical p, n ;
+analog
+I(p,n) <+ capacitance * ddt(V(p,n)) ;
+endmodule
+
+Verilog-A may be used to create signal sources. Here we show how to make a voltage controlled oscillator.
+
+'include "disciplines.vams"
+'include "constants.vams"
+module vco(in, out) ;
+parameter real amplitude = 1.0,
+centre_frequency = 1K,
+gain = 1K ;
+parameter integer steps_per_cycle=20 ;
+localparam real omegac = 2.0 * 'M_PI * centre_frequency,
+omega_gain = 2.0 * 'M_PI * gain ;
+electrical in, out ;
+analog
+begin : main
+real vin, instantaneousFreq ;
+vin = V(in) ;
+V(out) <+ amplitude*sin(idt(vin*omega_gain+omegac,0.0)) ;
+// Use $bound_step system task to limit time step
+// This is to ensure that sine wave is rendered with
+// adequate detail.
+instantaneousFreq = centre_frequency + gain * vin ;
+$bound_step (1.0 / instantaneousFreq / steps_per_cycle) ;
+end
+endmodule
+
+Here is a definition for an AND gate
+
+'include "disciplines.vams"
+module and_gate(in1, in2, out);
+electrical in1, in2, out ;
+parameter real digThresh = 2.0,
+digOutLow = 0.0,
+digOutHigh = 5.0,
+trise=10n,
+tfall=10n ;
+analog
+begin : main
+integer dig1, dig2, logicState ;
+// Detect in1 threshold
+@ (cross(V(in1)-digThresh, 0, 1n))
+if (V(in1)>digThresh)
+dig1 = 1 ;
+else
+dig1 = 0 ;
+// Detect in2 threshold
+@ (cross(V(in2)-digThresh, 0, 1n))
+if (V(in2)>digThresh)
+dig2 = 1 ;
+else
+dig2 = 0 ;
+logicState = dig1 && dig2 ? digOutHigh : digOutLow ;
+V(out) <+ transition(logicState , 0.0, trise, tfall) ;
+end
+endmodule
+
+Here we present a butterworth filter with arbitrary order. SIMetrix already has something like this built-in, but we show a Verilog-A version to demonstrate arrays, looping constructs and the Laplace analog operators.
+
+The design allows the user to specify the order of the filter using a model parameter. The filter itself is implemented using the analog operator laplace_nd which provides a Laplace transfer function defined by its numerator and denominator polynomial coefficients. To calculate the coefficients for the specified order, we build an array for the denominator coefficients using a for loop. The array only needs to be calculated once so we put this calculation in response to an initial_step event. (Actually it will be recalculated on each dc operating point iteration which is not as efficient as it could be. This is an area that we hope to address in a future revision.)
+
+'include "disciplines.vams"
+'include "constants.vams"
+module laplace_butter(in,ref,out) ;
+real res ;
+electrical in, ref, out ;
+parameter freq=1.0 ;
+parameter integer order=5 ;
+real scale, bPrev ;
+// Denominator array size
+real den[order:0] ;
+integer k ;
+analog
+begin
+// Calculate Butterworth coefficients
+@ (initial_step)
+begin
+scale = 1.0/freq/2/'M_PI ;
+bPrev = 1.0 ;
+den[0] = 1.0 ;
+for (k=1 ; k<order+1 ; k=k+1)
+begin
+bPrev = scale*cos((k-1.0)/order*('M_PI*0.5))/
+sin((k*0.5)/order*'M_PI) * bPrev ;
+den[k] = bPrev ;
+$strobe("den coeff %d = %g", k, den[k]) ;
+end
+end
+// Actual Butterworth filter
+res = laplace_nd( V(in,ref), {1.0}, den) ;
+V(out,ref) <+ res ;
+end
+endmodule
+
+Verilog-A allows definitions to contain repeated elements defined using vectors of nodes. Here we present an example that defines an RC network with any number of elements.
+
+'include "discipline.h"
+/* Model for an n-stage RC ladder network */
+module rc_ladder(inode[0], inode[n]) ;
+electrical [0:n] inode ;
+/* The compile_time attribute is a SIMetrix extension and is
+not part of the Verilog standard. compile_time parameters
+must be defined at the time the module is compiled. Their
+values can be specified on the .LOAD line in the netlist
+using the "ctparams" parameter. E.g. ctparams="n=8"
+If not specified on the .LOAD line, the default value
+specified here will be used. */
+(* type="compile_time" *) parameter integer n=16 ;
+parameter r=1k ;
+parameter c=1n ;
+genvar i ;
+analog
+begin
+for (i=0 ; i<=n-1 ; i=i+1)
+begin
+I(inode[i],inode[i+1]) <+(V(inode[i],inode[i+1]))/r;
+I(inode[i+1]) <+ ddt(V(inode[i+1])*c) ;
+end
+end
+endmodule

@@ -1,0 +1,35 @@
+module decoderc(y1,y2,y3,y4,a,b);
+	output reg y1,y2,y3,y4;
+	input a,b;
+		always @(a,b)
+	begin
+			if ({a,b}== 00)
+			{ y1}= 1;
+			if ({a,b}== 01)
+			{ y2}= 1;
+			if ({a,b}== 10)
+			{ y3}= 1;
+			if ({a,b}== 11)
+			{ y4}= 1;
+			
+			
+	end
+
+endmodule
+
+module decoderc_tb;
+  wire y1,y2,y3,y4;
+  reg a,b;
+  decoderc i_decoderc(y1,y2,y3,y4,a,b);
+  initial
+  begin
+  $monitor("At time %0t - a=%b, b=%b, y1=%b , y2=%b , y3=%b,y4=%b ",$time,a,b,y1,y2,y3,y4);
+  a='b1;
+  b='b1;
+end
+ always #5  a=~a;
+ always #10 b=~b;
+  initial #200 $finish;
+endmodule
+
+  

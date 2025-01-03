@@ -1,0 +1,65 @@
+{E:/bb/verilog codes/behaviroul/oddp.v} {1 {vlog -work work {E:/bb/verilog codes/behaviroul/oddp.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module oddp
+-- Compiling module odd_tb
+
+Top level modules:
+	odd_tb
+
+} {} {}} {E:/bb/verilog codes/behaviroul/comp - Copy.v} {1 {vlog -work work {E:/bb/verilog codes/behaviroul/comp - Copy.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module comp
+-- Compiling module comp_tb
+
+Top level modules:
+	comp_tb
+
+} {} {}} {E:/bb/verilog codes/behaviroul/oddpc - Copy.v} {1 {vlog -work work {E:/bb/verilog codes/behaviroul/oddpc - Copy.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module oddpc
+-- Compiling module oddp_tb
+
+Top level modules:
+	oddp_tb
+
+} {} {}} {E:/bb/verilog codes/behaviroul/compc - Copy.v} {1 {vlog -work work {E:/bb/verilog codes/behaviroul/compc - Copy.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module compc
+-- Compiling module comp2_tb
+
+Top level modules:
+	comp2_tb
+
+} {} {}} {E:/bb/verilog codes/behaviroul/FAcase.v} {1 {vlog -work work {E:/bb/verilog codes/behaviroul/FAcase.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FAcase
+-- Compiling module FAcase_tb
+
+Top level modules:
+	FAcase_tb
+
+} {} {}} {E:/bb/verilog codes/behaviroul/HAcase.v} {1 {vlog -work work {E:/bb/verilog codes/behaviroul/HAcase.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module HAcase
+-- Compiling module HAcase_tb
+
+Top level modules:
+	HAcase_tb
+
+} {} {}} {E:/bb/verilog codes/behaviroul/HA.v} {1 {vlog -work work {E:/bb/verilog codes/behaviroul/HA.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module HA
+-- Compiling module HA_tb
+
+Top level modules:
+	HA_tb
+
+} {} {}} {E:/bb/verilog codes/behaviroul/greytobin - Copy.v} {1 {vlog -work work {E:/bb/verilog codes/behaviroul/greytobin - Copy.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module greytobin
+-- Compiling module greytobin_tb
+
+Top level modules:
+	greytobin_tb
+
+} {} {}}

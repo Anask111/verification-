@@ -1,0 +1,82 @@
+/*
+ Copyright (C) 1991-2013 Altera Corporation
+ Your use of Altera Corporation's design tools, logic functions 
+ and other software and tools, and its AMPP partner logic 
+ functions, and any output files from any of the foregoing 
+ (including device programming or simulation files), and any 
+ associated documentation or information are expressly subject 
+ to the terms and conditions of the Altera Program License 
+ Subscription Agreement, Altera MegaCore Function License 
+ Agreement, or other applicable license agreement, including, 
+ without limitation, that your use is for the sole purpose of 
+ programming logic devices manufactured by Altera and sold by 
+ Altera or its authorized distributors.  Please refer to the 
+ applicable agreement for further details.
+*/
+MODELDATA
+/*MODELDATA HEADER*/
+/*
+ This file contains Slow Corner delays for the design using part EPM240ZM68I8
+ with speed grade 8, core voltage Auto, and temperature 2147483647 Celsius
+
+*/
+DESIGN "HA";
+TIMESCALE "1ns";
+
+
+
+
+
+TIMINGDATA
+
+ARCDATA
+___16.521__delay:
+CELL_RISE( scalar ) {
+VALUES ("16.521");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("16.521");
+}
+
+ENDARCDATA
+
+ARCDATA
+___17.211__delay:
+CELL_RISE( scalar ) {
+VALUES ("17.211");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("17.211");
+}
+
+ENDARCDATA
+
+ARCDATA
+___19.422__delay:
+CELL_RISE( scalar ) {
+VALUES ("19.422");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("19.422");
+}
+
+ENDARCDATA
+
+ARCDATA
+___20.117__delay:
+CELL_RISE( scalar ) {
+VALUES ("20.117");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("20.117");
+}
+
+ENDARCDATA
+
+ENDTIMINGDATA
+
+ENDMODELDATA

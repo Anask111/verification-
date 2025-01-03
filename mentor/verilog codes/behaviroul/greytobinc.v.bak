@@ -1,0 +1,46 @@
+module greytobinc(b,g);
+	output reg [3:0]b;
+	input [3:0]g;
+	always @(g) 
+		begin
+		case({g})
+	0000:begin b=0000 ;  end
+	0001:begin b=0001 ;  end
+	0010:begin b=0011 ;  end
+	0011:begin b=0010;  end
+	0100:begin b=0100;  end
+	0101:begin b=0101 ; end
+	0110:begin b=0111;  end
+	0111:begin b=0110;  end
+	1000:begin b=1100 ; end
+	1001:begin b=1101 ;  end
+	1010:begin b=1110 ;  end
+	1011:begin b=1111 ;  end
+	1100:begin b=1000;  end
+	1101:begin b=1001;  end
+	1110:begin b=1010 ;  end
+	1111:begin b=1011 ; end
+	endcase
+	end
+endmodule
+	
+	module greytobinc_tb;
+	  reg [3:0]g;
+	  wire [3:0]b;
+	  integer i;
+	  greytobinc i_greytobinc(b,g);
+	  initial
+	  begin
+	  $monitor("At time %0t - g=%b , b=%b ",$time,g,b);
+	   g[3:0] = 4'b0000;
+		 end
+		initial
+		begin 
+			for (i=0;i<16; i=i+1)
+			begin
+			{g}=i;
+			#5;
+			end
+		end
+	    always #100 $finish;
+  endmodule

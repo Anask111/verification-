@@ -1,0 +1,61 @@
+{E:/bb/verilog codes/fsm/moore1010a.v} {2 {vlog -work work {E:/bb/verilog codes/fsm/moore1010a.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module moore1010a
+** Warning: E:/bb/verilog codes/fsm/moore1010a.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: E:/bb/verilog codes/fsm/moore1010a.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: E:/bb/verilog codes/fsm/moore1010a.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: E:/bb/verilog codes/fsm/moore1010a.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: E:/bb/verilog codes/fsm/moore1010a.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+-- Compiling module moore1010a_tb
+
+Top level modules:
+	moore1010a_tb
+
+} {} {}} {E:/bb/verilog codes/fsm/fsm.v} {1 {vlog -work work {E:/bb/verilog codes/fsm/fsm.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fsm
+-- Compiling module fsm_tb
+
+Top level modules:
+	fsm_tb
+
+} {} {}} {E:/bb/verilog codes/fsm/mealy1010.v} {1 {vlog -work work {E:/bb/verilog codes/fsm/mealy1010.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mealy1010na
+-- Compiling module mealy1010na_tb
+
+Top level modules:
+	mealy1010na_tb
+
+} {} {}} {E:/bb/verilog codes/fsm/mealy1010a.v} {1 {vlog -work work {E:/bb/verilog codes/fsm/mealy1010a.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mealy1010a
+-- Compiling module mealy1010a_tb
+
+Top level modules:
+	mealy1010a_tb
+
+} {} {}} {E:/bb/verilog codes/fsm/moore1010na.v} {2 {vlog -work work {E:/bb/verilog codes/fsm/moore1010na.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module moore1010na
+** Warning: E:/bb/verilog codes/fsm/moore1010na.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: E:/bb/verilog codes/fsm/moore1010na.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: E:/bb/verilog codes/fsm/moore1010na.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: E:/bb/verilog codes/fsm/moore1010na.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+** Warning: E:/bb/verilog codes/fsm/moore1010na.v(4): (vlog-2600) [RDGN] - Redundant digits in numeric literal.
+
+-- Compiling module moore1010na_tb
+
+Top level modules:
+	moore1010na_tb
+
+} {} {}}

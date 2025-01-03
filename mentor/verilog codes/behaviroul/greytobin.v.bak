@@ -1,0 +1,75 @@
+module greytobin(b,g);
+	output [3:0]b;
+	input [3:0]g;
+		if ({a,b,c,d} == 0000)
+		{x }= 1'b1;
+		
+		else if ({a,b,c,d} == 0001)
+		{x }= 1'b1;
+		
+		else if ({a,b,c,d} == 0010)
+		{x }= 1'b1 ;
+		
+		else if ({a,b,c,d} == 0011)
+		{x }= 1'b0;
+		
+			else if ({a,b,c,d} == 0100)
+		{x }= 1'b1;
+		
+		else if ({a,b,c,d} == 0101)
+		{x }= 1'b0;
+		
+		else if ({b,a} == 0110)
+		{x}= 1'b0 ;
+		
+		else if ({b,a} == 0111)
+		{x }= 1'b0;
+		
+			else if ({b,a} == 1000)
+		{x}= 1'b1;
+		
+		else if ({a,b,c,d} == 1001)
+		{x }= 1'b0;
+		
+		else if ({a,b,c,d} == 1010)
+		{x }= 3'b001 ;
+		
+		else if ({a,b,c,d} == 1011)
+		{x }= 1'b1;
+		
+		else	if ({a,b,c,d} == 1100)
+		{x }= 1'b0;
+		
+		else if ({a,b,c,d} == 1101)
+		{x }= 1'b0;
+		
+		
+		else if ({a,b,c,d} == 1111)
+		{x }= 1'b0;
+		
+		else 
+		{x} = 1'b1;
+		
+	end
+endmodule
+	
+	module greytobin_tb;
+	  reg [3:0]g;
+	  wire [3:0]b;
+	  integer i;
+	  greytobin i_greytobin(b,g);
+	  initial
+	  begin
+	  $monitor("At time %0t - g=%b , b=%b ",$time,g,b);
+	   g[3:0] = 4'b0000;
+		 end
+		initial
+		begin 
+		for (i=0;i<16; i=i+1)
+		begin
+		{g}=i;
+		#5;
+		end
+		end
+	    always #100 $finish;
+ endmodule

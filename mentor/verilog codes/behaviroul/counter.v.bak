@@ -1,0 +1,9 @@
+module counter4(y,a,clk);
+output [3:0]y;
+input [3:0]a;
+input clk;
+always @(clk)
+	y=a+1;
+	endmodule
+	
+	

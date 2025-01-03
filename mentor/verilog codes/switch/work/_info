@@ -1,0 +1,463 @@
+m255
+K3
+13
+cModel Technology
+Z0 dE:\bb\verilog codes\fsm
+vand1
+Z1 !s100 jh=MEF^aF>BhD:XLR?YVJ3
+Z2 I0dBIR6ZVBjJ9]0KibcTO[0
+Z3 Vl4SE9IMb>1lUFFinGWhbm0
+Z4 dE:\bb\verilog codes\switch
+Z5 w1710842938
+Z6 8E:/bb/verilog codes/switch/and1.v
+Z7 FE:/bb/verilog codes/switch/and1.v
+L0 1
+Z8 OV;L;10.1d;51
+r1
+31
+Z9 !s108 1711452182.536000
+Z10 !s107 E:/bb/verilog codes/switch/and1.v|
+Z11 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/and1.v|
+Z12 o-work work -O0
+!i10b 1
+!s85 0
+!s101 -O0
+vand1_tb
+Z13 !s100 KQ[[[;2DI;<AKc2Tbeh[M2
+Z14 IYROT=loA9^9C0j93lgOR?2
+Z15 VK@6BT<I=9:69YXW8T7_342
+R4
+R5
+R6
+R7
+L0 13
+R8
+r1
+31
+R9
+R10
+R11
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vduty
+Z16 !s100 el9Gel0zfCLRBbKb<XO8h2
+Z17 IXiK3lGC=3CaMgdkiDgDP?3
+Z18 V2h[Jo=`X3`V87N;iEUz6>2
+R4
+Z19 w1711018172
+Z20 8E:/bb/verilog codes/switch/duty.v
+Z21 FE:/bb/verilog codes/switch/duty.v
+L0 3
+R8
+r1
+31
+Z22 !s108 1711452184.286000
+Z23 !s107 E:/bb/verilog codes/switch/duty.v|
+Z24 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/duty.v|
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vduty_tb
+Z25 !s100 PekoWUQe]bcQ@@OJTfJYH0
+Z26 IRKWLM2E@8diA3IX0[jPD:2
+Z27 VF7B3a0_W_<Ti31VVC4[`@3
+R4
+R19
+R20
+R21
+L0 23
+R8
+r1
+31
+R22
+R23
+R24
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vFA
+Z28 !s100 QRZPh<JcFQLc2XFce2KAN3
+Z29 ILUT8dX?=?XXI2T<IhAfTh1
+Z30 V=b[z;12F<Aj39Smco_i?[3
+R4
+Z31 w1710846620
+Z32 8E:/bb/verilog codes/switch/FA.v
+Z33 FE:/bb/verilog codes/switch/FA.v
+L0 1
+R8
+r1
+31
+Z34 !s108 1711452183.636000
+Z35 !s107 E:/bb/verilog codes/switch/FA.v|
+Z36 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/FA.v|
+R12
+n@f@a
+!i10b 1
+!s85 0
+!s101 -O0
+vFA_tb
+Z37 !s100 bIIKL:75c;O09BfO`A1Zh1
+Z38 Iz`dYFbmSjQcoFG3U1VJiF2
+Z39 VoW]J7EGjIKTS^CXOg1WCY3
+R4
+R31
+R32
+R33
+L0 12
+R8
+r1
+31
+R34
+R35
+R36
+R12
+Z40 n@f@a_tb
+!i10b 1
+!s85 0
+!s101 -O0
+vfact
+Z41 !s100 DY?3;?C^V3gXf?I5:e>J`3
+Z42 IfFhYBn`Zldmbe;^cFZTM;3
+Z43 VU7gbU]Kj:fWmf`EQg]f5k3
+R4
+Z44 w1711001521
+Z45 8E:/bb/verilog codes/switch/fact.v
+Z46 FE:/bb/verilog codes/switch/fact.v
+L0 2
+R8
+r1
+31
+Z47 !s108 1711452183.806000
+Z48 !s107 E:/bb/verilog codes/switch/fact.v|
+Z49 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/fact.v|
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vfact_test
+Z50 !s100 fG=`Le2`Sz`doD8[fl0Om1
+Z51 IR8Hd1V>iB7095<WV[CLLl1
+Z52 V9dNAQAb;F2GE=1kz78:NP0
+R4
+R44
+R45
+R46
+L0 26
+R8
+r1
+31
+R47
+R48
+R49
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vfile_read
+!i10b 1
+!s100 ZJB]L2^b;97[?gAJgPbSP2
+IU<A<=We:=zb?^YlhBUcdH2
+Z53 Vm_h5UW7DCzJWdoB59R3P<1
+R4
+w1711452179
+Z54 8E:/bb/verilog codes/switch/file_read.v
+Z55 FE:/bb/verilog codes/switch/file_read.v
+L0 3
+R8
+r1
+!s85 0
+31
+!s108 1711452184.616000
+!s107 E:/bb/verilog codes/switch/file_read.v|
+Z56 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/file_read.v|
+!s101 -O0
+R12
+vfile_write
+Z57 !s100 8HT=ide?9l]z7[=G5Kn=V2
+Z58 IX4ERV4@[oG?f7Tam=8D[E3
+Z59 VPG^12E3T1BLnY`hiB5_Ln1
+R4
+Z60 w1711452022
+Z61 8E:/bb/verilog codes/switch/file_write.v
+Z62 FE:/bb/verilog codes/switch/file_write.v
+L0 3
+R8
+r1
+31
+Z63 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/file_write.v|
+R12
+!i10b 1
+!s85 0
+Z64 !s108 1711452184.486000
+Z65 !s107 E:/bb/verilog codes/switch/file_write.v|
+!s101 -O0
+vinv
+Z66 !s100 Tla?@5X2WCE<DC1l`Q`=X0
+Z67 I9M7d]kBjRT7M@;I]3hDDi3
+Z68 VJKGk;zdSRe[[=54[zn]7;1
+R4
+Z69 w1710840798
+Z70 8E:/bb/verilog codes/switch/inv.v
+Z71 FE:/bb/verilog codes/switch/inv.v
+L0 1
+R8
+r1
+31
+Z72 !s108 1711452182.116000
+Z73 !s107 E:/bb/verilog codes/switch/inv.v|
+Z74 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/inv.v|
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vinv_tb
+Z75 !s100 P`[AVITild:FSmNR^Ah>[2
+Z76 IY5BIgHB5SEGMnG0COJZ[>0
+Z77 Vhj=S;DXM[]EfHHFT<d6K?1
+R4
+R69
+R70
+R71
+L0 10
+R8
+r1
+31
+R72
+R73
+R74
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vnand1
+Z78 !s100 >el8C9_?>VYJF>C2T7I0R0
+Z79 I8dzaPlz8Q_45P>maTH80T1
+Z80 VQA^WjQ6o0Sn3[6mGGLW9`2
+R4
+Z81 w1710842159
+Z82 8E:/bb/verilog codes/switch/nand1.v
+Z83 FE:/bb/verilog codes/switch/nand1.v
+L0 1
+R8
+r1
+31
+Z84 !s108 1711452182.336000
+Z85 !s107 E:/bb/verilog codes/switch/nand1.v|
+Z86 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/nand1.v|
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vnand1_tb
+Z87 !s100 J2DRcFfT1XVPR<=abMgQc1
+Z88 Ikig<`ER?n]S]eF]7h[K0j1
+Z89 VBGUbb>=_m_UJg7AdGoK0Z1
+R4
+R81
+R82
+R83
+L0 13
+R8
+r1
+31
+R84
+R85
+R86
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vnor1
+Z90 !s100 cKAjF9A[d04;8YYBiMe_31
+Z91 IX8EZi3268L:a[h7]18_On2
+Z92 VHZki]i>Ujb4f0:z=GTMNo0
+R4
+Z93 w1710843651
+Z94 8E:/bb/verilog codes/switch/nor1.v
+Z95 FE:/bb/verilog codes/switch/nor1.v
+L0 1
+R8
+r1
+31
+Z96 !s108 1711452182.736000
+Z97 !s107 E:/bb/verilog codes/switch/nor1.v|
+Z98 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/nor1.v|
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vnor1_tb
+Z99 !s100 M8VBYjL@RXG3zL9mTVfTO0
+Z100 I=iC?`N`_nl`LKjQhk4^551
+Z101 Vf;2XTXU^FmiMYBKOLM6i>2
+R4
+R93
+R94
+R95
+L0 13
+R8
+r1
+31
+R96
+R97
+R98
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vor1
+Z102 !s100 YFk;l]JIjgEoSPenE0eVd1
+Z103 IXOVNo5Wa=DB=2HEHhR8ET0
+Z104 VXPUkmEk6`94gH5PP=3UXZ3
+R4
+Z105 w1710844822
+Z106 8E:/bb/verilog codes/switch/or1.v
+Z107 FE:/bb/verilog codes/switch/or1.v
+L0 1
+R8
+r1
+31
+Z108 !s108 1711452182.916000
+Z109 !s107 E:/bb/verilog codes/switch/or1.v|
+Z110 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/or1.v|
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vor1_tb
+Z111 !s100 z>i4ko1QQz?kIQWKb7Rjg0
+Z112 IWC:VmM8nkA=:7cMoVm:Z=2
+Z113 VmFbRL<E9PVGjQXJi4hU2i3
+R4
+R105
+R106
+R107
+L0 15
+R8
+r1
+31
+R108
+R109
+R110
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vsumdif
+Z114 !s100 JW<d2LI6`kK>O398XbECQ3
+Z115 IAOcTj7cAPPDmNSjKZ6g=21
+Z116 VRYS>OAQMM6F1T^Z_0AeZ]1
+R4
+Z117 w1711009336
+Z118 8E:/bb/verilog codes/switch/sumdif.v
+Z119 FE:/bb/verilog codes/switch/sumdif.v
+L0 2
+R8
+r1
+31
+Z120 !s108 1711452184.016000
+Z121 !s107 E:/bb/verilog codes/switch/sumdif.v|
+Z122 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/sumdif.v|
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vsumdif_tb
+Z123 !s100 le]C88g_FN==GPWFk6fGz1
+Z124 If]0Hlmz]JDQjB>gKnN>T51
+Z125 VX^nc5Z20B9RfbZR8B9>ic1
+R4
+R117
+R118
+R119
+L0 29
+R8
+r1
+31
+R120
+R121
+R122
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vxnor1
+Z126 !s100 7fEmEH>XVgJ>`gO@z@6jU0
+Z127 IAOh;>PFN]EF3ziFBZ3J<03
+Z128 VG2oX=VMMO>lF:WAQQOY@Z1
+R4
+Z129 w1710845858
+Z130 8E:/bb/verilog codes/switch/xnor1.v
+Z131 FE:/bb/verilog codes/switch/xnor1.v
+L0 1
+R8
+r1
+31
+Z132 !s108 1711452183.386000
+Z133 !s107 E:/bb/verilog codes/switch/xnor1.v|
+Z134 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/xnor1.v|
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vxnor1_tb
+Z135 !s100 N`5l]gl;LP;mOK8DR9?bR3
+Z136 I:3E>WGC<Je^eYN_mm_;:G3
+Z137 V`QD9XUWVQoLhWZJ4jGci30
+R4
+R129
+R130
+R131
+L0 9
+R8
+r1
+31
+R132
+R133
+R134
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vxor1
+Z138 !s100 0N2=Ea6A[WICWi5gHJW7U2
+Z139 ISP>^2akeUbM<[JhEF0nIl0
+Z140 VHA5`fGhl9h=0mj42DKda51
+R4
+Z141 w1710845303
+Z142 8E:/bb/verilog codes/switch/xor1.v
+Z143 FE:/bb/verilog codes/switch/xor1.v
+L0 1
+R8
+r1
+31
+Z144 !s108 1711452183.136000
+Z145 !s107 E:/bb/verilog codes/switch/xor1.v|
+Z146 !s90 -reportprogress|300|-work|work|E:/bb/verilog codes/switch/xor1.v|
+R12
+!i10b 1
+!s85 0
+!s101 -O0
+vxor1_tb
+Z147 !s100 g_eRe?aKXG50TKz];dI@W3
+Z148 IcKB3_:cX2i8:YC7L;P7je2
+Z149 VZOQS_Ec:EQfeNH;[cT=nQ1
+R4
+R141
+R142
+R143
+L0 11
+R8
+r1
+31
+R144
+R145
+R146
+R12
+!i10b 1
+!s85 0
+!s101 -O0

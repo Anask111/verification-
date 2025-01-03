@@ -1,0 +1,39 @@
+module seven(a,b,c,d,e,f,g,A,B,C,D);
+	output a,b,c,d,e,f,g;
+	input A,B,C,D;
+	always @(A,B,C,D)
+		begin
+		case({g})
+	0000:begin {a,b,c,d,e,f,g}=110111 ;  end
+	0001:begin {a,b,c,d,e,f,g}=0100001 ;  end
+	0010:begin {a,b,c,d,e,f,g}=1011011 ;  end
+	0011:begin {a,b,c,d,e,f,g}=1110101;  end
+	0100:begin {a,b,c,d,e,f,g}=0111100;  end
+	0101:begin {a,b,c,d,e,f,g}=1110110 ; end
+	0110:begin {a,b,c,d,e,f,g}=1110111;  end
+	0111:begin {a,b,c,d,e,f,g}=1001100;  end
+	1000:begin {a,b,c,d,e,f,g}=1111111 ; end
+	1001:begin {a,b,c,d,e,f,g}=1111100;  end
+	default : {a,b,c,d,e,f,g}=0000000;
+	endcase
+	end
+	endmodule
+	
+	module seven_TB;
+	  wire a,b,c,d,e,f,g;
+	  reg A,B,C,D;
+	  seven i_seven(a,b,c,d,e,f,g,A,B,C,D);
+	  initial
+	  begin
+	  $monitor("At time %0t -  a=%b , b=%b ,c=%b, d=%b,e=%b ,f=%b , g=%b ,A=%b, B=%b,C=%b D=%b",$time,a,b,c,d,e,f,g,A,B,C,D);
+	    A=1'b0;
+	    B=1'b0;
+	    C=1'b1;
+		 D=1'b1;
+	    end
+	    always #1 A=~B;
+		 always #2 B=~B;
+		 always #4 C=~C;
+		 always #8 D=~D;
+		 initial #500 $finish;
+	    endmodule

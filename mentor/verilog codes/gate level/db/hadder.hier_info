@@ -1,0 +1,9 @@
+|sr
+q << q.DB_MAX_OUTPUT_PORT_TYPE
+p << x6.DB_MAX_OUTPUT_PORT_TYPE
+s => x3.IN0
+r => x4.IN0
+clk => x3.IN1
+clk => x4.IN1
+
+

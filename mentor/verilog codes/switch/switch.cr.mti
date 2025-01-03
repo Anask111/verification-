@@ -1,0 +1,103 @@
+{E:/bb/verilog codes/switch/inv.v} {1 {vlog -work work {E:/bb/verilog codes/switch/inv.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module inv
+-- Compiling module inv_tb
+
+Top level modules:
+	inv_tb
+
+} {} {}} {E:/bb/verilog codes/switch/FA.v} {1 {vlog -work work {E:/bb/verilog codes/switch/FA.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FA
+-- Compiling module FA_tb
+
+Top level modules:
+	FA_tb
+
+} {} {}} sumdif.v {1 {vlog -work work {E:/bb/verilog codes/switch/sumdif.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sumdif
+-- Compiling module sumdif_tb
+
+Top level modules:
+	sumdif_tb
+
+} {} {}} {E:/bb/verilog codes/switch/xor1.v} {1 {vlog -work work {E:/bb/verilog codes/switch/xor1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module xor1
+-- Compiling module xor1_tb
+
+Top level modules:
+	xor1_tb
+
+} {} {}} {E:/bb/verilog codes/switch/or1.v} {1 {vlog -work work {E:/bb/verilog codes/switch/or1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module or1
+-- Compiling module or1_tb
+
+Top level modules:
+	or1_tb
+
+} {} {}} file_read.v {1 {vlog -work work {E:/bb/verilog codes/switch/file_read.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module file_read
+
+Top level modules:
+	file_read
+
+} {} {}} {E:/bb/verilog codes/switch/and1.v} {1 {vlog -work work {E:/bb/verilog codes/switch/and1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module and1
+-- Compiling module and1_tb
+
+Top level modules:
+	and1_tb
+
+} {} {}} duty.v {1 {vlog -work work {E:/bb/verilog codes/switch/duty.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module duty
+-- Compiling module duty_tb
+
+Top level modules:
+	duty_tb
+
+} {} {}} fact.v {1 {vlog -work work {E:/bb/verilog codes/switch/fact.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fact
+-- Compiling module fact_test
+
+Top level modules:
+	fact_test
+
+} {} {}} {E:/bb/verilog codes/switch/xnor1.v} {1 {vlog -work work {E:/bb/verilog codes/switch/xnor1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module xnor1
+-- Compiling module xnor1_tb
+
+Top level modules:
+	xnor1_tb
+
+} {} {}} {E:/bb/verilog codes/switch/nor1.v} {1 {vlog -work work {E:/bb/verilog codes/switch/nor1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module nor1
+-- Compiling module nor1_tb
+
+Top level modules:
+	nor1_tb
+
+} {} {}} {E:/bb/verilog codes/switch/nand1.v} {1 {vlog -work work {E:/bb/verilog codes/switch/nand1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module nand1
+-- Compiling module nand1_tb
+
+Top level modules:
+	nand1_tb
+
+} {} {}} {E:/bb/verilog codes/switch/file_write.v} {1 {vlog -work work {E:/bb/verilog codes/switch/file_write.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module file_write
+
+Top level modules:
+	file_write
+
+} {} {}}

@@ -1,0 +1,97 @@
+{E:/bb/verilog codes/gate level/my_OR.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/my_OR.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module my_OR
+-- Compiling module ORtb
+
+Top level modules:
+	ORtb
+
+} {} {}} {E:/bb/verilog codes/gate level/fa.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/fa.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module FA
+-- Compiling module FA_tb
+
+Top level modules:
+	FA_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/arith.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/arith.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module arith
+-- Compiling module arith_tb
+
+Top level modules:
+	arith_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/sr.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/sr.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module sr
+-- Compiling module sr_tb
+
+Top level modules:
+	sr_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/decoder.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/decoder.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module decoder
+-- Compiling module decoder_tb
+
+Top level modules:
+	decoder_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/fig1.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/fig1.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module fig1
+-- Compiling module fig1_tb
+
+Top level modules:
+	fig1_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/comp.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/comp.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module comp
+-- Compiling module comp_tb
+
+Top level modules:
+	comp_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/dl.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/dl.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module dl
+-- Compiling module dl_tb
+
+Top level modules:
+	dl_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/hadder.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/hadder.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module hadder
+-- Compiling module hadder_tb
+
+Top level modules:
+	hadder_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/mux.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/mux.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module mux
+-- Compiling module mux_tb
+
+Top level modules:
+	mux_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/demux.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/demux.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module demux
+-- Compiling module demux_tb
+
+Top level modules:
+	demux_tb
+
+} {} {}} {E:/bb/verilog codes/gate level/AND.v} {1 {vlog -work work {E:/bb/verilog codes/gate level/AND.v}
+Model Technology ModelSim ALTERA vlog 10.1d Compiler 2012.11 Nov  2 2012
+-- Compiling module my_AND
+-- Compiling module ANDtb
+
+Top level modules:
+	ANDtb
+
+} {} {}}

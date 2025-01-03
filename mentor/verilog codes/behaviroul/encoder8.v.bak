@@ -1,0 +1,53 @@
+module encoder8(y1,y2,y3,a,a1,a2,a3,a4,a5,a6,a7);
+	output reg y1,y2,y3;
+	input a,a1,a2,a3,a4,a5,a6,a7;
+		always @(y1,y2,y3)
+	begin
+			if ({y1,y2,y3}== 000)
+			{ a0}= 1;
+			if ({y1,y2,y3}== 001)
+			{ a1}= 1;
+			if ({y1,y2,y3}== 010)
+			{ a2}= 1;
+			if ({y1,y2,y3}== 011)
+			{ a3}= 1;
+			if ({y1,y2,y3}== 100)
+			{ a4}= 1;
+			if ({y1,y2,y3}== 101)
+			{ a5}= 1;
+			if ({y1,y2,y3}== 110)
+			{ a6}= 1;
+			if ({y1,y2,y3}== 111)
+			{ a7}= 1;
+			
+			
+	end
+	endmodule
+	
+	
+	module encoder8_tb;
+	  wire a,b,c,d,e,f,g;
+	  reg [7:0] a;
+	  reg [7:0] a1;
+	  reg [7:0] a2;
+	  reg [7:0] a3;
+	  reg [7:0] a4;
+	  reg [7:0] a5;
+	  reg [7:0] a6;
+	  reg [7:0] a7;
+	  encoder8 i_encoder8(y1,y2,y3,a,a1,a2,a3,a4,a5,a6,a7);
+	  initial
+	  a=8'b1xxxxxxx;
+	  a1=8'b01xxxxxx;
+	  a2=8'b001xxxxx;
+	  a3=8'b0001xxxx;
+	  a4=8'b00001xxx;
+	  a5=8'b000001xx;
+	  a6=8'b0000001x;
+	  a7=8'b00000001;
+	  begin
+	  $monitor("At time %0t -  y1=%b , y2=%b ,y3=%b, a1=%b,a2=%b ,a=%b , a3=%b ,a4=%b, a5=%b,a6=%b a7=%b",$time,y1,y2,y3,a,a1,a2,a3,a4,a5,a6,a7);
+	   
+	    end
+		 initial #500 $finish;
+	    endmodule

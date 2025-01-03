@@ -1,0 +1,56 @@
+
+
+
+TIMINGDATA
+
+ARCDATA
+___3.339__delay:
+CELL_RISE( scalar ) {
+VALUES ("3.339");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("3.339");
+}
+
+ENDARCDATA
+
+ARCDATA
+___3.103__delay:
+CELL_RISE( scalar ) {
+VALUES ("3.103");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("3.103");
+}
+
+ENDARCDATA
+
+ARCDATA
+___3.570__delay:
+CELL_RISE( scalar ) {
+VALUES ("3.570");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("3.570");
+}
+
+ENDARCDATA
+
+ARCDATA
+___3.327__delay:
+CELL_RISE( scalar ) {
+VALUES ("3.327");
+}
+
+CELL_FALL( scalar ) {
+VALUES ("3.327");
+}
+
+ENDARCDATA
+
+ENDTIMINGDATA
+
+ENDMODELDATA

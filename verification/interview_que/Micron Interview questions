@@ -1,0 +1,24 @@
+Micron Interview questions 
+1. Introduction 
+2. What if I use the resistor divider instead of buck regulator? 
+3. Inductor role in the Buck regulator?
+4. In PMIC what will happen power over voltage
+5. Diff between behaviour and RTL
+6. What is the significance of inductor in buck regulator 
+7. What is sent to the foundry
+8. AMS co simulation flow 
+9. Which analog block are present in the RRAM 
+10. Which file needs to be used for invokes the mixed signal simulator 
+11. Is it necessary to have a macro_ucli.tcl file important 
+12. Assertion will give you error display then why it is to be needed to be done in file 
+13. Complete flow of simulation 
+14. Explain vec file
+15. For switch in the Buck regulator what is used 
+16. How to calculate the inductor value in the Buck 
+17. What capacitor signifies in buck
+18. For switch what is used which type of MOSFET is used 
+19. What is the disadvantage of PMOS 
+20. If we place the diode in place of the inductor & inductor to diode what will happen?
+21. Comparator & sense amp 
+22. What you have done in terms of scripting 
+23. Where you see yourself in the next 2 years

@@ -1,7 +1,0 @@
-`include "disciplines.vams"
-module ana(output clk);
-wreal clk;
-initial begin
-forever clk=~clk;
-end
-endmodule

@@ -1,5 +1,0 @@
-`include "disciplines.vams"
-`include "resistor.vams"
-
-module tb ;
-real 

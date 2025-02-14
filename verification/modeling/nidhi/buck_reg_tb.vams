@@ -1,0 +1,60 @@
+`include "Buck_regulator.vams"
+`include "disciplines.vams"
+
+module tb ;
+
+reg clk , rst_n , en;
+real vdig ;
+reg [3:0] data;
+reg wrb;
+
+real vdd , vss , vana, vref ,V2;
+
+wire dvs_done ;
+
+ buck_top Bt (.clk(clk),.rst_n(rst_n), .en(en) ,.wrb( wrb) ,.vdig(vdig), .data(data),.vdd(vdd),.vss(vss),.vana(vana),.vref(vref),V2(V2), .ov(ov) , .uv(uv));
+
+
+always #5 clk = ~clk ;
+
+initial begin 
+clk = 0;
+en = 0;
+rst_n = 0;
+vdig = 0;
+wrb = 1;
+vdd = 0;
+vss = 0;
+vana = 0;
+vref = 0;
+data = 0;
+
+end
+
+initial begin 
+#5 rst_n = 1;
+#5 
+en = 1;
+vdig = 1.6;
+wrb = 0;
+vdd = 5;
+vss = 0;
+vana = 1.6;
+vref = 1.6;
+V2 = 5.5
+data = 4'b0001;
+
+
+//wait(dvs_done);
+#3000
+data = 4'b1000;
+#3000
+data = 4'b0010;
+#3000
+$finish ;
+end 
+
+endmodule 
+
+
+

@@ -1,0 +1,33 @@
+`include"disciplines.vams"
+//`include "constants.vams"
+`include "resistor.vams"
+`include "vsource.vams"
+
+module voltage_divider (vin,vout);
+
+/*inout vout;
+inout vin , b;
+electrical vin,b,vout;
+electrical gnd;*/
+
+inout vin , vout ;
+electrical b, gnd;
+
+
+parameter real dv_R1 = 1.0;
+parameter real dv_R2 = 1.0;
+parameter real dv_vcc = 5.0;
+
+vsource  #(.VDC(5.0)) VS (vin , b);
+resistor #(.R(1.0))   R1 (vin , vout);
+resistor #(.R(1.0))   R2 (vout , b);
+resistor #(.R(10))    GND_RES(b,gnd);
+
+
+//analog begin 
+//$display ("vout =  %f, vin = %f", V(vout) , V(vin));
+//end 
+
+endmodule 
+
+

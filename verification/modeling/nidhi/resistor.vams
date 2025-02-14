@@ -1,0 +1,18 @@
+`include "disciplines.vams"
+//`include "constants.vams"
+
+module resistor(p,n);
+inout p,n;
+electrical p,n;
+
+parameter real R = 1.0;
+//electrical gnd;
+
+analog begin 
+//V(p,n) <+ I(p,n)*R;
+I(p,n) <+ V(p,n)/R;
+
+//$display ("vout =  %f", V(p, n));
+end 
+
+endmodule 

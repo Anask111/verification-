@@ -1,0 +1,95 @@
+module digital_18(
+  input clk, rst_n, en,
+  input wreal vdig,
+  input [3:0] data,
+  input wrb,
+  output reg dvs_done_dig,
+  output wreal dvs_data
+);
+
+//Ramp Rate
+parameter ramp_rate = 18;
+
+//Internal Signals
+integer volt = 0;
+integer count = 0;
+integer ramp = 0;
+reg ramp_stop = 0;
+
+//Volt Register 
+always @(posedge clk) begin
+  case(data)
+    4'b0001: volt = 5500;
+    4'b0010: volt = 4000;
+    4'b0100: volt = 3300;
+    4'b1000: volt = 1000;
+    default: volt = 0;
+  endcase
+end
+  
+
+always @(posedge clk ) begin
+  if (!rst_n) begin
+    dvs_done_dig <= 0;
+    ramp <= 0;
+    count <= 0;
+    ramp_stop <= 0;
+  end else if (en && vdig == 1.6 && wrb == 0) begin
+     if (ramp < volt)begin 
+        ramp = ramp +ramp_rate;
+      if(ramp > volt )begin 
+        ramp = volt;
+       end 
+       count = ramp/ramp_rate;
+         if (ramp == volt)begin 
+           dvs_done_dig <= 1;
+         end
+      end 
+     else if (ramp>volt)begin 
+       ramp = ramp - ramp_rate;
+          if(ramp < volt)begin 
+            ramp = volt ;
+          end 
+          count = ramp/ramp_rate;
+             if(ramp == volt)begin 
+                dvs_done_dig <=1;
+             end 
+          end 
+        end 
+      end 
+
+assign dvs_data = count;
+
+endmodule
+
+
+
+
+
+
+ /* if (ramp_stop) begin
+    if (ramp <= volt) begin
+        ramp = ramp + ramp_rate;
+        count = count + 1; 
+        if (ramp >= volt) begin
+          dvs_done_dig <= 1;
+          ramp = volt;
+          ramp_stop <= 1;
+        end
+      end
+    else if (ramp > volt) begin
+        $display("ramppppppppppppppppppppppppppp");
+        ramp = ramp - ramp_rate;
+        count = count - 1;
+        if (ramp <= volt) begin
+          dvs_done_dig <= 1;
+          ramp = volt; 
+          ramp_stop <= 1;
+        end
+      end
+    end
+  end
+end
+end */
+
+

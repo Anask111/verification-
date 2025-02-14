@@ -1,0 +1,8 @@
+module voltage_divider(
+input wreal vin,
+output wreal vout
+);
+
+assign vout=vin/2.0;
+
+endmodule

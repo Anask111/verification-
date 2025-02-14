@@ -1,0 +1,76 @@
+`include "disciplines.vams"
+`include "resistance.vams"
+module reg_tb;
+electrical p,n;
+real vref;
+
+va_resistor dt (p,n);
+
+initial begin
+vref = 1;
+#5;
+vref = 2;
+#5;
+vref = 3;
+#5;
+vref = 4;
+#5;
+vref = 5;
+#5;
+vref = 6;
+#5;
+vref = 1;
+#5;
+vref = 2;
+#5;
+vref = 3;
+#5;
+vref = 4;
+#5;
+vref = 5;
+#5;
+vref = 6;
+#5;
+vref = 1;
+#5;
+vref = 2;
+#5;
+vref = 3;
+#5;
+vref = 4;
+#5;
+vref = 5;
+#5;
+vref = 6;
+#5;
+vref = 1;
+#5;
+vref = 2;
+#5;
+vref = 3;
+#5;
+vref = 4;
+#5;
+vref = 5;
+#5;
+vref = 6;
+#5;
+vref = 1;
+#5;
+vref = 2;
+#5;
+vref = 3;
+#5;
+vref = 4;
+#5;
+vref = 5;
+#5;
+vref = 6;
+#5;
+
+end
+
+analog begin
+V(p,n) <+ vref;
+end
+endmodule

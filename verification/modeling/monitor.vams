@@ -1,0 +1,47 @@
+`include "disciplines.vams"
+
+
+module monitor(vdd, vmain, vref,ov,uv);
+
+`ifdef MONITOR_WREAL
+
+input wreal vdd , vmain , vref;
+output wreal ov, uv;
+
+
+parameter real vdd_min = 0;
+parameter real vdd_max = 5.5;
+
+parameter real vmain_min = 4.9;
+parameter real vmain_max = 7.7;
+
+wreal all_ok = (vdd_min < vdd &&  vdd_max > vdd);
+
+assign uv = (all_ok && (vmain < vmain_min ))?vref:0;
+assign ov = (all_ok && (vmain > vmain_max))? vref:0;
+
+`else
+
+input vdd , vmain , vref ;
+electrical vdd , vmain , vref;
+output ov , uv ;
+electrical ov, uv;
+
+
+parameter real vdd_min = 0;
+parameter real vdd_max = 5.5;
+
+parameter real vmain_min = 5.5;
+parameter real vmain_max = 7.7;
+
+
+analog begin 
+
+V(ov) <+ transition(V(vmain) > V(vmain_max))?  V(vref) :0;
+V(uv) <+ transition(V(vmain) < V(vmain_min))? V(vref):0;
+
+end 
+
+`endif
+endmodule 
+

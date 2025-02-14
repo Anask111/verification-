@@ -1,0 +1,40 @@
+`include "disciplines.vams"
+
+module dvs_buck (en,vdd,vss,vana,vref,dvs_data,fb,lx,dvs_done_ana);
+
+//...................INPUTS...................//
+input en ,vdd,vss,vana,vref,dvs_data;
+wreal  vdd,vss,vana,vref, dvs_data;
+
+//..................OUTPUT....................//
+
+output fb,lx,dvs_done_ana;
+electrical fb,lx;
+wire dvs_done_ana;
+
+//..................PARAMETER.................//
+ real ramp_rate = 0.0;
+real fb_temp;
+
+//...................INTERNAL SIGNALS.........//
+wire all_ok ;
+
+assign all_ok = (vdd == 5 && vana== 1.6 && vss == 0);
+
+always @*begin
+if (en && all_ok) begin 
+ramp_rate = 0.018;
+fb_temp = dvs_data *ramp_rate ;
+end 
+end 
+
+analog begin 
+V(fb) <+ dvs_data*ramp_rate;
+V(lx) <+ V(fb);
+//V(dvs_done_ana) <+ (V(fb) > (dvs_data*ramp_rate) && V(fb) != 0)? 1'b1:0;
+end 
+
+assign dvs_done_ana = ((fb_temp) >= (dvs_data*ramp_rate) && (fb_temp) != 0)? 1'b1:'b0;
+
+endmodule 
+

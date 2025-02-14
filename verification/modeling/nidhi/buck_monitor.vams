@@ -1,0 +1,27 @@
+`include "disciplines.vams"
+
+module monitor (V1 , V2 , ov , uv, vref );
+
+//INPUT SIGNALS 
+//input dvs_done , vdd , vss , vref , vana ;
+input real V2 ,vref ;
+electrical V1;
+
+//OUTPUT SIGNALS
+output ov , uv; 
+electrical ov , uv;
+
+//PARAMETERS 
+wire all_ok ;
+
+//assign all_ok = (vdd = 5 && vss = 0 && vana = 1.6);
+
+analog begin
+//if (dvs_done)
+V(ov) <+ (V(V1) > (V2 * 0.1))? V(vref):0;
+//V(uv) <+ (V(V1) < (V2))
+
+ 
+end
+
+endmodule 

@@ -1,0 +1,44 @@
+`include "disciplines.vams"
+module ramp_generator(enable, reset, rg_out, ov_out);
+	input enable;
+	input reset;
+	output reg ov_out;
+	output wreal rg_out;	
+	parameter real v_ref = 5;
+	parameter real ramp_rate = 0.1;
+
+	real out_temp;
+
+	assign rg_out = out_temp;
+	always #1 begin
+		if(!reset)begin
+			out_temp = 0;
+			ov_out = 0;
+		end
+		else if(out_temp < v_ref)begin
+			if(enable)begin
+				out_temp = out_temp+ramp_rate;
+			end
+		end
+		else ov_out = 1;
+		
+	end
+endmodule
+
+module tb();
+	reg enable;
+	reg reset;
+	wreal rg_out;
+	wire ov_out;
+	ramp_generator r1(enable, reset, rg_out, ov_out);
+	initial begin
+		reset = 1;
+		enable = 0;
+		#10 reset = 0;
+		#2 reset = 1;
+		#5 enable = 1;
+		#100 reset = 0;
+		#1 reset = 1;
+	end	
+	initial #500 $finish;
+endmodule 

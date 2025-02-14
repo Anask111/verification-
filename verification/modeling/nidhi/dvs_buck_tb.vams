@@ -1,0 +1,99 @@
+`include "disciplines.vams"
+`include "dvs_buck.vams"
+
+module tb ;
+
+wreal en, vdd,vss,vana,vref;
+electrical dvs_data;
+electrical fb,lx,dvs_done_ana;
+
+
+real en_temp , vdd_temp, vss_temp ,vana_temp,vref_temp,dvs_data_temp;
+
+dvs_buck dB(en,vdd,vss,vana,vref,dvs_data,fb,lx,dvs_done_ana);
+
+initial begin 
+en_temp  = 0;
+vdd_temp = 0;
+vss_temp = 0;
+vana_temp = 0;
+vref_temp = 1.6;
+end 
+
+
+initial begin 
+#5
+en_temp = 1;
+#5
+vdd_temp = 5;
+vss_temp = 0;
+vana_temp = 1.6;
+#10
+dvs_data_temp = 2;
+#10
+dvs_data_temp = 3;
+#10
+dvs_data_temp = 4;
+#10
+dvs_data_temp = 5;
+#10
+dvs_data_temp = 6;
+#10
+dvs_data_temp = 7;
+#10
+dvs_data_temp = 8;
+#10
+dvs_data_temp = 9;
+#10
+dvs_data_temp = 10;
+#10
+dvs_data_temp = 11;
+#10
+dvs_data_temp = 12;
+#10
+dvs_data_temp = 13;
+#10
+dvs_data_temp = 14;
+#10
+dvs_data_temp = 15;
+#10
+dvs_data_temp = 16;
+#10
+dvs_data_temp = 17;
+#10
+dvs_data_temp = 18;
+#10
+dvs_data_temp = 19;
+#10
+dvs_data_temp = 20;
+#10
+dvs_data_temp = 21;
+#10
+dvs_data_temp = 22;
+#10
+dvs_data_temp = 23;
+#10
+dvs_data_temp = 24;
+#10
+dvs_data_temp = 25;
+#50 
+$finish;
+
+end 
+
+assign vref = vref_temp;
+assign en = en_temp;
+assign vdd = vdd_temp;
+assign vss = vss_temp;
+assign vana = vana_temp;
+
+analog begin
+//V(vdd) <+ vdd_temp;
+//V(vss) <+ vss_temp;
+//V(vana) <+ vana_temp;
+V(dvs_data) <+ dvs_data_temp;
+end 
+
+endmodule 
+
+

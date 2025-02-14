@@ -1,0 +1,50 @@
+module analog_clock;
+wreal out;
+real temp;
+integer ontime,offtime;
+reg dir;
+
+parameter real vp = 5;
+parameter real tr = 10;
+parameter real tf = 10;
+parameter real ton = 20;
+parameter real toff = 20;
+
+assign out = temp;
+
+initial begin
+temp = 0;
+ontime = 0;offtime = 0;
+dir = 0;
+end
+
+initial #500 $finish;
+
+always #1 begin
+
+if(temp < vp && dir == 0)begin
+temp = temp + (vp / tr);
+end
+else if(temp > 0 && dir ==1)begin
+temp = temp - (vp / tf);
+end
+
+if(temp >= vp) begin
+ontime = ontime + 1;
+end
+else if(temp <= 0) begin
+offtime = offtime + 1;
+end
+
+if(ontime == ton + 1)begin
+ontime = 0;
+dir = 1;
+temp = temp - vp / tf;
+end
+if(offtime == toff + 1)begin
+offtime = 0;
+dir = 0;
+temp = temp + vp / tr;
+end
+end
+endmodule

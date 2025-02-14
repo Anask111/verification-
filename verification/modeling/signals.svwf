@@ -1,0 +1,83 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+set id [waveform add -signals  {
+	simulator::tb.dir
+	} ]
+set id [waveform add -signals  {
+	waves::tb.en
+	} ]
+set id [waveform add -signals  {
+	waves::tb.in
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for V -min 0 -max 21.199999999999999 -scale linear
+set id [waveform add -signals  {
+	simulator::tb.in_ground
+	} ]
+set id [waveform add -signals  {
+	waves::tb.in_val
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 12.58462788216 -max 21.199999999999999 -scale linear
+set id [waveform add -signals  {
+	waves::tb.out
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for V -min 0 -max 21.199999999999999 -scale linear
+set id [waveform add -signals  {
+	simulator::tb.out_ground
+	} ]
+set id [waveform add -signals  {
+	waves::tb.out_val
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min -1 -max 1 -scale linear
+set id [waveform add -signals  {
+	waves::tb.smpl
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for V -min 2.5 -max 3.5 -scale linear
+set id [waveform add -signals  {
+	simulator::tb.smpl_ground
+	} ]
+set id [waveform add -signals  {
+	waves::tb.smpl_val
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 2.5 -max 3.3428812261599998 -scale linear
+set id [waveform add -signals  {
+	simulator::tb.thresh
+	} ]
+waveform format $id -trace analogSampleAndHold
+waveform axis range $id -for default -min 2.25 -max 2.75 -scale linear
+set id [waveform add -signals  {
+	waves::tb.nd.state
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 0 -max 21.199999999999999 -scale linear
+set id [waveform add -signals  {
+	waves::tb.smpl_val
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 2.5 -max 3.3428812261599998 -scale linear
+set id [waveform add -signals  {
+	waves::tb.smpl
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for V -min 2.5 -max 3.5 -scale linear
+set id [waveform add -signals  {
+	{((continuous(waves::tb.smpl_val) - simulator::tb.thresh) == 1)}
+	} ]
+
+waveform xview limits 19.2471635746ns 70.7528364254ns

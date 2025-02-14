@@ -1,0 +1,21 @@
+module ana_clk(clk);
+
+	output real clk ;
+	
+	parameter TON  = 10;
+	parameter TOFF = 10;
+	parameter real ramp_rate = 0.5;
+
+
+	initial begin
+	repeat(5)begin 
+	clk = clk + ramp_rate;
+      	if(clk == 5.0)begin
+	#TON 
+	clk = 0.0;
+	#TOFF; 
+	end 
+	end 
+	end 
+
+endmodule 

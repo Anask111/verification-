@@ -1,0 +1,17 @@
+Quest global 
+1. Introduction 
+2. Explain the project you have worked on 
+3. Explain the PMIC 
+4. Write the wreal code for comparator , inverter 
+5. Given the 2 ckt asked to explain those . (1 ckt having PMOS and NMOS connected and asked vout ) 
+6. 2 nd ckt I will attach the image. Here need to calculate c1 and c2 value with different different switch cases. On n off. 
+7. 2 assertion que - if signal a is stable for 2 clk cycle. 
+8. Another one changed from 0-1 (basically ans  is $rose)
+9. What is the difference between module and program block 
+10. How's the knowledge about UVM. 
+11. How's cosimulation flow 
+12. Why we need modelling 
+13. What you have verified in PMIC 
+14. What you have verified in RRAM. 
+15. Why AMS is important.
+16. Which you have found more convenient cosimulation or cadence

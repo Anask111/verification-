@@ -1,0 +1,14 @@
+`include "disciplines.vams"
+//`include "constants.vams"
+
+module vsource(p,n);
+
+inout p,n;
+electrical p,n;
+parameter real vdd = 0.0;
+
+analog begin 
+V(p,n) <+ (vdd);
+end 
+
+endmodule 

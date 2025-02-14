@@ -1,0 +1,17 @@
+`include "rc_filter.vams"
+`include "vsource.vams"
+`include "disciplines.vams"
+
+module tb;
+
+electrical vin , vout;
+
+vsource #(.vdd(5.0)) VC(vin, gnd);
+
+rc_filter F1 (vin,vout,gnd);
+
+analog begin
+$strobe ("vout at 1khz: %f",V(vout)); 
+end 
+
+endmodule 

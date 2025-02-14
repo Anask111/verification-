@@ -1,0 +1,8 @@
+`include "counter.sv"
+module counter_top(cout);
+
+output  cout;
+
+counter h_1 (cout);
+
+endmodule

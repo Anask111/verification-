@@ -1,0 +1,14 @@
+`include "disciplines.vams"
+module inverter(out, in);
+output out;
+input in;
+electrical out, in;
+parameter real ref = 1000.0; 
+
+analog begin
+    if (ref!=0) 
+        V(out, in) <+ I(out, in)*ref;
+    else
+        V(out, in) <+ 0.0;
+end
+endmodule

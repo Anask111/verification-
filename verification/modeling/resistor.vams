@@ -1,0 +1,13 @@
+`include"disciplines.vams"
+`include "constants.vams"
+
+module resistor(p,n);
+
+parameter real R = 2;
+inout p,n;
+electrical p,n;
+
+analog begin 
+V(p,n) <+ I(p,n) *R;
+end 
+endmodule 

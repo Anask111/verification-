@@ -1,0 +1,52 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+set id [waveform add -signals [subst  {
+	{[format {tb.clk}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb.data[3:0]}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb.dvs_data}]}
+	} ]]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 0 -max 101 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {tb.dvs_done_dig}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb.en}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb.rst_n}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb.vdig}]}
+	} ]]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 0 -max 1.6000000000000001 -scale linear
+set id [waveform add -signals [subst  {
+	{[format {tb.wrb}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb.d18.volt}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb.d18.count}]}
+	} ]]
+set id [waveform add -signals [subst  {
+	{[format {tb.d18.ramp}]}
+	} ]]
+
+waveform xview limits 0 1010ns

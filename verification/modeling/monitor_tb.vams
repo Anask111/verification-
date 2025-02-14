@@ -1,0 +1,80 @@
+`include "disciplines.vams"
+`include "monitor.vams"
+
+module tb ;
+
+`ifdef MONITOR_WREAL 
+
+real vdd , vref , vmain  ;
+
+wreal ov , uv ;
+
+monitor mv(.vdd(vdd),.vmain(vmain),.vref(vref));
+
+initial begin 
+vdd = 0;
+vref = 1.6;
+vmain = 0;
+end 
+
+initial begin 
+# 5 
+vdd = 4.8;
+#10 vmain = 1.2;
+#10 vmain = 2.4;
+#10 vmain = 3.2;
+#10 vmain = 4.2;
+#10 vmain = 5.2;
+#10 vmain = 6.4;
+#10 vmain = 7.2;
+#10 vmain = 8.0;
+#10 vmain = 9.9;
+#10 vmain = 10.1;
+#30 
+$finish;
+end
+
+`else 
+
+real vdd_temp , vmain_temp , vref_temp;
+electrical vdd , vmain , vref;
+electrical ov, uv;
+
+//parameter real temp = 10;
+
+monitor m1(.vdd(vdd),.vmain(vmain),.vref(vref));
+
+initial begin
+vdd_temp = 0;
+vmain_temp = 2;
+vref_temp = 1.6;
+end 
+
+initial begin 
+#5
+vdd_temp = 4.8;
+
+#10 vmain_temp = 1.2;
+#10 vmain_temp = 2.2;
+#10 vmain_temp = 3.2;
+#10 vmain_temp = 4.2;
+#50 vmain_temp = 5.2;
+#10 vmain_temp = 6.2;
+#10 vmain_temp = 7.2;
+#10 vmain_temp = 8.2;
+#10 vmain_temp = 9.2;
+#10 vmain_temp = 10.2;
+#50
+$finish;
+end
+
+analog begin 
+
+V(vref) <+ vref_temp;
+V(vmain) <+ vmain_temp;
+V(vdd)  <+ vdd_temp;
+end 
+
+`endif
+endmodule  
+

@@ -1,0 +1,80 @@
+
+#
+# Mnemonic Maps
+#
+mmap new  -reuse -name {Boolean as Logic} -radix %b -contents {{%c=FALSE -edgepriority 1 -shape low}
+{%c=TRUE -edgepriority 1 -shape high}}
+mmap new  -reuse -name {Example Map} -radix %x -contents {{%b=11???? -bgcolor orange -label REG:%x -linecolor yellow -shape bus}
+{%x=1F -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=2C -bgcolor red -label ERROR -linecolor white -shape EVENT}
+{%x=* -label %x -linecolor gray -shape bus}}
+
+array unset createdGroup
+array set createdGroup {}
+set id [waveform add -signals  {
+	waves::tb.clk
+	} ]
+set id [waveform add -signals  {
+	{waves::tb.data[3:0]}
+	} ]
+set id [waveform add -signals  {
+	waves::tb.en
+	} ]
+set id [waveform add -signals  {
+	waves::tb.fb
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for V -min 0 -max 5.4899999999999993 -scale linear
+set id [waveform add -signals  {
+	waves::tb.lx
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for V -min 0 -max 5.4899999999999993 -scale linear
+set id [waveform add -signals  {
+	waves::tb.rst_n
+	} ]
+set id [waveform add -signals  {
+	waves::tb.vana
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 0 -max 1.6000000000000001 -scale linear
+set id [waveform add -signals  {
+	waves::tb.vdd
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 0 -max 5 -scale linear
+set id [waveform add -signals  {
+	waves::tb.vdig
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 0 -max 1.6000000000000001 -scale linear
+set id [waveform add -signals  {
+	waves::tb.vref
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min 0 -max 1.6000000000000001 -scale linear
+set id [waveform add -signals  {
+	waves::tb.vss
+	} ]
+waveform format $id -trace analogLinear
+waveform axis range $id -for default -min -1 -max 1 -scale linear
+set id [waveform add -signals  {
+	waves::tb.wrb
+	} ]
+set id [waveform add -signals  {
+	waves::tb.Bt.d18.ramp
+	} ]
+set id [waveform add -signals  {
+	waves::tb.Bt.d18.count
+	} ]
+set id [waveform add -signals  {
+	waves::tb.Bt.d18.dvs_done_dig
+	} ]
+set id [waveform add -signals  {
+	waves::tb.Bt.db.dvs_done_ana
+	} ]
+set id [waveform add -signals  {
+	waves::tb.Bt.dvs_done
+	} ]
+
+waveform xview limits 0 1000000ns

@@ -1,0 +1,11 @@
+silicon labs
+
+1)	Introduction.
+2)	Overview of your most recent professional experience.
+3)	What is AMS verification?.
+4)	What challenges did you encounter during your previous experience?.
+5)	Explain verification flow.(micron specific only).
+6)	Why we create a model.
+7)	Create a model for slowly increase ramp signal.
+8)	Why `include "disciplines.vams" is used?.
+9)	What does 'conversion issue' refer to?.

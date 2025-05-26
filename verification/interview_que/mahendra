@@ -1,0 +1,19 @@
+// sasken silicon
+
+Tell me about PLL.
+
+What causes jitter in PLL?
+
+Types of jitter.
+
+Difference between current mirror & cascode current mirror. Give their use case.
+
+Derive the Rout for both current mirrors.
+
+Difference b/w Ring Oscillator & LC-tank oscillator & where these are used.
+
+Asked about LDO project I did.
+
+Parameters of a LDO.
+
+PAM4 v/s PAM8. Difference b/w these two.

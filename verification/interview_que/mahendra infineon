@@ -1,0 +1,8 @@
+Infineon (Quest Global) Interview Questions
+
+1) Asked about the LDO and other projects I previously did and told to explain the LDO project in detail.
+2) 5T Differential amplifier, asked the design process and sizing of each transistor
+3) Asked to explain the Buck converter circuit (basic one)
+4) A 5V pulse is given to a C-R ckt (Differentiator). Draw the output voltage (taken across R)
+5) Write LDO model in SV-RNM.
+6) Explain the Flash ADC project I did. What were the test cases.

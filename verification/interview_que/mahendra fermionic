@@ -1,0 +1,12 @@
+Fermionic - AMS Verification Interview
+
+1) Introduction
+2) Asked to explain in detail about the Flash ADC project I did.
+3) Write SV-RNM model for Comparator
+4) Draw the SV TB architecture
+5) A pulse is givren to a RC low-pass. Draw the output.
+6) An output wreal wire is getting driven by many internal blocks, what will be the output? (use of resolution fucntion)
+7) Difference between case, casex, casez.
+8) Difference between == and ===.
+9) What are config files. Is config file always required for running wreal simualtions?
+10) Suppose I want to run a wreal model in an analog-on-top schematic TB, how to do it.

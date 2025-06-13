@@ -1,0 +1,37 @@
+NXP Interview questions 
+
+Introduction 
+Went through the project I had worked on
+What is PMIC (Internal and Client), what was the difference?
+On what basis the tapeout was done for the internal PMIC ?
+In which PMIC you found bugs?
+Which blocks were present in Buck Regulators?
+How did you figured out the connectivity bug ?
+In which PMIC you modelled the buck regulators and how? In which language?
+How does a AMS Verification Environment looks like?
+What are views present for DUT/blocks?
+How do we configure the view eg. SCH, RTL, MODEL ?
+We configure using it in a file or tool itself ?
+How to do model vs schematic, have you ever ran a model vs schematic simulation?
+Write a testbench of model vs schematc ?
+How do we provide analog values ?
+What was JTAG conversion model, explain its working and logic behind it?
+What if corrupted data comes at the data line of JTAG conv model?
+What was your scope of work in this task?
+Transition filter, what was the reference to the JTAG_IO node, what are the arguments in Transition filter?
+Have you worked on connect modules ? What are E2L, E2R connect modules?
+Write a E2L connect module ?
+What is absdelta, cross, above ?
+Can we use cross or above in this connect module ?
+Have you worked on analog checkers ?
+How do we capture analog values and use them in analog checkers ?
+What is $cgav task, with syntax ?
+Which checkers you have written uptil now ?
+Difference between SV, WREAL and Electrical ?
+Which simulators are used for them ?
+Have you worked on Testplan creation ? What are the contents required in a testplan ? If given task to create testplan how will you proceed ?
+How confident are you in UVM, assertions, coverage?
+For which project you have written assertions and done coverage?
+Have you worked on scripting, if given a task to write script will you be comfortable?
+Which scripting language was used in previous project, what was your contribution in that script ?
+If given a task or assigned a block near to deadline, how confident are you and how will you manage it to complete within time?

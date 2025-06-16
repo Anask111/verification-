@@ -1,0 +1,25 @@
+1.Introduction 
+
+ 2.Describe the projects you have worked on so far?
+
+3.Develop a SystemVerilog model for a digitally controlled buck regulator with Dynamic Voltage Scaling (DVS) functionality?
+
+4.How would you describe the simulation and verification environment used for the buck regulator project?
+
+5.What types of bugs or issues did you encounter during the verification of the buck regulator, and how did you resolve them?
+
+6.Explain the logic behind how the buck regulator steps down the voltage.
+
+7.What is the difference between SVRNM (SystemVerilog Real Number Modeling), wreal, and electrical modeling in AMS simulations?
+
+8.Which analog solver is triggered when using wreal modeling in AMS simulations?
+
+9.Can you write a wreal model for a 1 MHz oscillator?
+
+10.What is the purpose of a connectmodule in mixed-signal modeling?
+
+11.What is the internal logic or functionality typically implemented inside a connectmodule?
+
+12.Can you write a comparator model using electrical modeling in Verilog-AMS?
+
+13.If you are assigned an analog/mixed-signal block to model and verify independently, would you be able to take full ownership and drive it to completion?

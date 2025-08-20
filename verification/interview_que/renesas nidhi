@@ -1,0 +1,13 @@
+renesas nidhi
+1. where are connect modules present .
+2. write a model for 1mhz oscillator. how this model helped in AMS simulation.
+3 . showed a circuit of buck regulator and asked to explain me how it works.
+4 . showed a file (ams control file) and asked what is this file , what exactly it does.
+5 . how to increase the stop time .
+6 . opened the xrun.log and asked questions regarding the commands (incdir, -f , -v)
+7. asked to justify 8 months of work in Radiant.
+8.  Explain Verilog AMS (filters, monitored events)
+9. Difference between wreal and vams
+10 . I2c , SPI
+11 .  explain the logic for buck regulator which you have written in wreal model
+12 . have you written any test cases

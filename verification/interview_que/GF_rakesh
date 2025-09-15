@@ -1,0 +1,33 @@
+Interview questions:
+
+ 
+
+1.Difference between wreal model and verilog model?
+
+2.Explain the LDO circuit by writing the modeling code.
+
+3.Difference between wreal and real?
+
+4.Draw the PLL diagram and explain the operation.
+
+5.Difference between pass by value and pass by reference
+
+6.Difference between code coverage and functional coverage.
+
+7.difference between logic and reg?
+
+8.what is the difference between procedural and continuous assignment used in verilog?
+
+9.what is assertion and what are the types of assertion?
+
+10.Do you know MRAM,RRAM and SRAM?
+
+11.What is randomisation? difference between rand and randc?
+
+12.will you use discipline. vams in wreal model?
+
+13.Explain Fork join types and explain briefly
+
+14.shallow copy and deep copy difference
+
+15.super and this keyword difference

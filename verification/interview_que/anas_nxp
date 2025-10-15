@@ -1,0 +1,26 @@
+Client: NXP
+Interviewer: atul nagarkar
+
+intro of yourself .
+1.	.diffferent combnination of rc circuit & to find output voltage
+2.	 to find transfer function of given rc circuit 
+3.	Mosfet id equation linear & saturation
+4.	Id vs vgs , id vs vds curve
+5.	Id vs vgs and to show all regions of mosfert in that
+6.	 and to find its poles & zeros using that.
+7.	 electrical modelling based question
+8.	 contribution operator, & asked how it works
+9.	gave waverform digital & asked which operator is used to convert given waveform to different required waveform with ramp & delay  = transition operator
+10.	 To code R L C in electrical modelling
+11.	 MVS in detail, 
+12.	 how u gave input stimuls to variable is MVS
+14.	 RNM / sv rnm based question (code)
+15.	Files in MVS
+16.	 Connect module, amsd block 
+17.	 checkers to write in RNM to restrict variable values whwithin range
+18.	  do that other than ternery operator
+19.	Gave code for amplifer gain and ask to use that model’s parameter in new module & make their instances and how to change those parameters value if needed.
+20.	Current mirror code of given circuit
+21.	Rlc circuit electrical modling code
+22.	Connect module 
+make and gate with mosfet 

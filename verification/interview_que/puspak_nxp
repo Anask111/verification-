@@ -1,0 +1,24 @@
+Client: NXP
+Interviewer: atul nagarkar
+
+Didn’t ask what u did , directly started topics  : Started with anallog, then electrical modeling, then saw resume then asked LDO as given in resume.
+1.	.diffferent combnination of rc circuit & to find output voltage
+2.	 to find transfer function of given rc circuit 
+3.	Mosfet id equation linear & saturation
+4.	Id vs vgs , id vs vds curve
+5.	Id vs vgs and to show all regions of mosfert in that
+6.	 and to find its poles & zeros using that.
+7.	 electrical modelling based question
+8.	 contribution operator, & asked how it works
+9.	gave waverform digital & asked which operator is used to convert given waveform to different required waveform with ramp & delay  = transition operator
+10.	 To code R L C in electrical modelling
+11.	 MVS in detail, 
+12.	 how u gave input stimuls to variable is MVS
+13.	 do u know config file in MVS  ( not config view)
+14.	 RNM / sv rnm based question (code)
+15.	4:1 mux RNM code
+16.	Files in MVS
+17.	 Connect module, amsd block 
+18.	 checkers to write in RNM to restrict variable values whwithin range
+19.	  do that other than ternery operator
+20.	Gave code for amplifer gain and ask to use that model’s parameter in new module & make their instances and how to change those parameters value if needed.

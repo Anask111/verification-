@@ -1,0 +1,20 @@
+Here are the interview questions of Infineon.
+
+1. What is resistor divider?
+2. How to calculate the output voltage of the resistor divider?
+3. Draw and explain Inverter ckt?
+4. Why PMOS is at the top and NMOS is at low in CMOS?
+5. Draw and explain Buck regulator.
+6. What is LDO?
+
+Here are the interview questions Tessolve.
+1. What kind of work are you working on in Micron?
+2. What is SPF?
+   3. What is degradation/ chip aging?
+4. What Dcap simulation?
+5. What is PIMIC?
+6. What is your contribution in PIMIC verification?
+7. What is the difference between Verilog and Verilog AMS ?
+8. How did you verify AHB APB bridge?
+9. What is handshake mechanism in AHB APB bridge?
+

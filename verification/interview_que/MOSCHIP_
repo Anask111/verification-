@@ -1,0 +1,38 @@
+Interview Questions Asked (Client: MOSCHIP)
+1. Personal & Background
+1.	Introduce yourself.
+2.	What projects have you worked on?
+________________________________________
+2. Analysis Techniques (Analog / AMS Verification)
+3.	What different analyses have you performed?
+o	DC analysis
+o	AC analysis
+o	Transient analysis
+o	Monte Carlo analysis
+4.	What did you do specifically in AC analysis for:
+o	Bandgap Reference (BGR)
+o	LDO
+o	Two-stage Op-Amp
+5.	Why do we perform transient analysis?
+o	What transient tests did you perform for BGR and LDO?
+________________________________________
+3. Monte Carlo & Corner Analysis
+6.	Have you performed Monte Carlo analysis?
+o	During Monte Carlo analysis, what happens to process corners?
+o	Do process corners change during Monte Carlo?
+o	If they do not change, then what values are used?
+o	Are you confident about the steps you are explaining?
+________________________________________
+4. Parameter Extraction & Automation
+7.	Do you know how to extract parameters from the schematic level?
+o	How exactly do you extract these parameters?
+o	Can this extraction be automated using Python?
+o	Do you know Python?
+8.	Can you write a Python script to extract parameters from a schematic?
+o	Rate your Python skills out of 10.
+________________________________________
+5. AMS / Verilog-A Knowledge
+9.	What do you know about AMS (Analog Mixed Signal)?
+o	Do you know Verilog-A?
+o	Can you write Verilog-A code for an 8-bit ADC?
+

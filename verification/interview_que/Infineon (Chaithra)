@@ -1,0 +1,14 @@
+Date: 23/02/26
+Name of Interview Panel: Infineon (Chaithra)
+Questions:
+1. Introduce yourself.
+2. When did you start working as an AMS Engineer?
+3. Which company did you work for? Was it a service-based company or a product-based company?
+4. You recently joined Tessolve. Did they let you know which project or domain you'll be working on?
+5. Explain the block diagram of an LDO.
+6. If you connect an LDO block to a PLL block, what type of LDO would you choose (high bandwidth or low bandwidth)? Why?
+7. Why did you switch from Digital Verification (DV) to AMS?
+8. How did you model the LDO?
+9. Did you develop the LDO model from scratch, or was it a legacy model? For which client was it developed?
+10. Was the LDO used at the SoC level?
+11. How confident are you that, if selected at Infineon, you can work at the SoC level?

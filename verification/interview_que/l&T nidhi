@@ -1,0 +1,11 @@
+L&T interview questions
+
+1. How was I2c integrated in Project 
+2. what is the difference between AMS and DMS simulation 
+3. Buck regulator circuit 
+4. Asked about tools Verdi , Xcellium 
+5. Inverter Transient analysis 
+6. How to take analog signals in .sv file 
+7. Probe file 
+8. ams.scs file , amsd block , ie card connect rules 
+9. Asked how to check iddq current
